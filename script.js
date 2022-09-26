@@ -38,12 +38,7 @@ dataButtons.forEach(button =>
     var clearButton = document.getElementById("clear");
     clearButton.addEventListener('click', () =>
     {
-        clearButton.style.backgroundColor = "red";
-        /*dataButtons.forEach(button =>
-        {
-            button.textContent = " ";
-            button.style.backgroundColor = "red";
-        })*/
+        
     })
 
 
