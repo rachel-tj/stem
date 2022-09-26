@@ -16,9 +16,12 @@ body
 h1
 {
     color: black;
-    background-color: rgb(255, 255, 255, 0.5);
-    font-size: 50px;
-    margin-inline: 390px;
+    background-color: rgb(255, 255, 255, 0.7);
+    font-size: 85px;
+    height: 120px;
+    margin-top: 40px;
+    margin-inline: 350px;
+    border-radius: 8px;
     text-align: center;
 }
 
@@ -58,12 +61,12 @@ h3
 
 #turno:hover
 {
-    background-color: rgb(179, 195, 255, 0.9);
+    background-color: rgba(205, 216, 255, 0.9);
 }
 
 #turnx:hover
 {
-    background-color:rgb(255, 161, 247, 0.9);
+    background-color:rgba(255, 180, 249, 0.9);
 }
 
 #turno:active, #turnx:active
