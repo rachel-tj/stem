@@ -101,11 +101,15 @@ a
 }
 
 
-
-
 a:hover
 {
     background-color: rgb(255, 255, 255, 0.8);
+}
+
+a:active
+{
+    box-shadow: none;
+    padding: 25px;
 }
 /*
 .clear-button > button:active
