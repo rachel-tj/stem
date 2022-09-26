@@ -102,12 +102,12 @@ a
 
 
 
-/*
-.clear-button > button:hover
-{
-    background-color: rgb(255, 255, 255, 0.7);
-}
 
+a:hover
+{
+    background-color: rgb(255, 255, 255, 0.8);
+}
+/*
 .clear-button > button:active
 {
     background-color: rgb(255, 255, 255, 0.5);
