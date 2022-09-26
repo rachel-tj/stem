@@ -4,11 +4,18 @@
     box-sizing: border-box;
     font-family: "cochin";
     font-weight: normal;
-    font-size: 100px;
+    font-size: medium;
 }
 
 body
 {
     padding: 0;
     background: linear-gradient(to left, rgb(142, 255, 217), rgb(128, 162, 255));
+    font-size: medium;
+}
+
+a
+{
+    font-size: medium;
+    color: black;
 }
