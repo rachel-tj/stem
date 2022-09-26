@@ -1,0 +1,141 @@
+*, *::before, *::after
+
+{
+    box-sizing: border-box;
+    font-family: "cochin";
+    font-weight: normal;
+    font-size: 100px;
+}
+
+body
+{
+    padding: 0;
+    background: linear-gradient(to left, rgb(114, 114, 255), rgb(255, 70, 227));
+}
+
+h1
+{
+    color: black;
+    background-color: rgb(255, 255, 255, 0.5);
+    font-size: 50px;
+    margin-inline: 390px;
+    text-align: center;
+}
+
+h2
+{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.turnbutton > button
+{
+    font-size: x-large;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.4);
+    vertical-align: middle;
+}
+
+#turnx
+{
+    background-color:rgb(255, 161, 247, 0.7);
+}
+
+#turno
+{
+    background-color:rgb(179, 195, 255, 0.7);
+}
+
+#turno:hover
+{
+    background-color: rgb(179, 195, 255, 0.9);
+}
+
+#turnx:hover
+{
+    background-color:rgb(255, 161, 247, 0.9);
+}
+
+#turno:active, #turnx:active
+{
+    padding: 25px;
+    box-shadow: none;
+}
+
+#turnx:active
+{
+    background-color:rgb(255, 161, 247, 0.7);
+}
+
+#turno:active
+{
+    background-color:rgb(179, 195, 255, 0.7)
+}
+
+#turno:after
+{
+    background: red;
+}
+
+.clear-button > button
+{
+    font-size: x-large;
+    padding: 30px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.4);
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+h3
+{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    bottom: 350px;
+}
+
+.clear-button > button:hover
+{
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.clear-button > button:active
+{
+    background-color: rgb(255, 255, 255, 0.5);
+    box-shadow: none;
+    padding: 25px;
+}
+
+.grid
+{
+    display: grid;
+    padding: 0px;
+    position: relative;
+    top: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+}
+
+.grid > button
+{
+    height: 150px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border: 1px solid black;
+}
+
+.grid > button:hover
+{
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+
+.grid > button:focus
+{
+    background-color: rgb(255, 161, 247, 0.7);
+}
