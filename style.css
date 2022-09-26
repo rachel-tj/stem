@@ -29,6 +29,14 @@ h2
     text-align: center;
 }
 
+h3
+{
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    vertical-align: text-bottom;
+}
+
 .turnbutton > button
 {
     font-size: x-large;
@@ -87,17 +95,11 @@ a
     width: 400px;
     border-color: black;
     text-decoration: none;
-    align-items: center;
     border-radius: 10px;
     box-shadow: 5px 10px rgba(0, 0, 0, 0.4);
     background-color: rgb(255, 255, 255, 0.5);
 }
 
-.clear-button
-{
-    font-size: small;
-    align-items: center;
-}
 
 
 /*
@@ -121,7 +123,6 @@ a
     top: 50px;
     justify-content: center;
     align-items: center;
-    height: 150vh;
     grid-template-columns: repeat(3, 150px);
     grid-template-rows: repeat(3, 150px);
 }
