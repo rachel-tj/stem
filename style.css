@@ -1,0 +1,14 @@
+*, *::before, *::after
+
+{
+    box-sizing: border-box;
+    font-family: "cochin";
+    font-weight: normal;
+    font-size: 100px;
+}
+
+body
+{
+    padding: 0;
+    background: linear-gradient(to left, rgb(114, 114, 255), rgb(255, 70, 227));
+}
