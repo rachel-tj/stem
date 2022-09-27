@@ -4,139 +4,51 @@
     box-sizing: border-box;
     font-family: "cochin";
     font-weight: normal;
-    font-size: 100px;
 }
 
 body
 {
     padding: 0;
-    background: linear-gradient(to left, rgb(114, 114, 255), rgb(255, 70, 227));
+    background: linear-gradient(to left, rgb(142, 255, 217), rgb(128, 162, 255));
+    font-size: large;
+    margin-inline: 50px;
 }
 
-
-h2
+.blog
 {
-    color: white;
-    font-size: 20px;
-    text-align: center;
-}
-
-h3
-{
-    text-align: center;
-    align-self: center;
-    align-content: center;
-    vertical-align: text-bottom;
-}
-
-.turnbutton > button
-{
-    font-size: x-large;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 5px 10px rgba(0, 0, 0, 0.4);
-    vertical-align: middle;
-}
-
-#turnx
-{
-    background-color:rgb(255, 161, 247, 0.7);
-}
-
-#turno
-{
-    background-color:rgb(179, 195, 255, 0.7);
-}
-
-#turno:hover
-{
-    background-color: rgba(205, 216, 255, 0.9);
-}
-
-#turnx:hover
-{
-    background-color:rgba(255, 180, 249, 0.9);
-}
-
-#turno:active, #turnx:active
-{
-    padding: 25px;
-    box-shadow: none;
-}
-
-#turnx:active
-{
-    background-color:rgb(255, 161, 247, 0.7);
-}
-
-#turno:active
-{
-    background-color:rgb(179, 195, 255, 0.7)
-}
-
-#turno:after
-{
-    background: red;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 30px
 }
 
 a
 {
-    font-size: 30px;
+    font-size: 40px;
     color: black;
-    padding: 30px;
-    width: 400px;
-    border-color: black;
-    text-decoration: none;
-    border-radius: 10px;
-    box-shadow: 5px 10px rgba(0, 0, 0, 0.4);
-    background-color: rgb(255, 255, 255, 0.5);
 }
-
 
 a:hover
 {
-    background-color: rgb(255, 255, 255, 0.8);
+    color: darkviolet
 }
 
-a:active
+a:after
 {
-    box-shadow: none;
-    padding: 25px;
-}
-/*
-.clear-button > button:active
-{
-    background-color: rgb(255, 255, 255, 0.5);
-    box-shadow: none;
-    padding: 25px;
-}*/
-
-.grid
-{
-    display: grid;
-    padding: 0px;
-    position: relative;
-    top: 50px;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(3, 150px);
-    grid-template-rows: repeat(3, 150px);
+    color: orange;
 }
 
-.grid > button
+h1
 {
-    height: 150px;
-    background-color: rgb(255, 255, 255, 0.5);
-    border: 1px solid black;
-}
-
-.grid > button:hover
-{
+    color: black;
     background-color: rgb(255, 255, 255, 0.7);
+    font-size: 85px;
+    height: 120px;
+    margin-top: 40px;
+    margin-inline: 200px;
+    border-radius: 8px;
+    text-align: center;
 }
 
-
-.grid > button:focus
+h2
 {
-    background-color: rgb(255, 161, 247, 0.7);
+    text-align: center;
 }
