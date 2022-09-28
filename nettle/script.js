@@ -7,7 +7,8 @@ var components = {
     colors : {1: 'blue', 2: 'green', 3: 'red', 4: 'purple', 5: 'maroon', 6: 'turquoise', 7: 'black', 8: 'grey'}
 }
 
-function startGame() {
+function startGame()
+{
     components.bombs = placeBombs();
     document.getElementById('field').appendChild(createTable());
 }
@@ -21,7 +22,8 @@ function placeBombs() {
     return rows;
 } 
 
-function placeSingleBomb(bombs) {
+function placeSingleBomb(bombs)
+{
 
     var nrow, ncol, row, col;
     nrow = Math.floor(Math.random() * components.num_of_rows);
@@ -35,26 +37,32 @@ function placeSingleBomb(bombs) {
     
     col = row[ncol];
     
-    if (!col) {
+    if (!col)
+    {
         row[ncol] = true;
         return
     } 
-    else {
+    else
+    {
         placeSingleBomb(bombs);
     }
 }
 
-function cellID(i, j) {
+function cellID(i, j)
+{
     return 'cell-' + i + '-' + j;
 }
 
-function createTable() {
+function createTable()
+{
     var table, row, td, i, j;
     table = document.createElement('table');
     
-    for (i=0; i<components.num_of_rows; i++) {
+    for (i=0; i<components.num_of_rows; i++)
+    {
         row = document.createElement('tr');
-        for (j=0; j<components.num_of_cols; j++) {
+        for (j=0; j<components.num_of_cols; j++)
+        {
             td = document.createElement('td');
             td.id = cellID(i, j);
             row.appendChild(td);
@@ -65,16 +73,21 @@ function createTable() {
     return table;
 }
 
-function addCellListeners(td, i, j) {
-    td.addEventListener('mousedown', function(event) {
-        if (!components.alive) {
+function addCellListeners(td, i, j)
+{
+    td.addEventListener('mousedown', function(event)
+    {
+        if (!components.alive)
+        {
             return;
         }
         components.mousewhiches += event.which;
-        if (event.which === 3) {
+        if (event.which === 3)
+        {
             return;
         }
-        if (this.flagged) {
+        if (this.flagged)
+        {
             return;
         }
         this.style.backgroundColor = 'lightGrey';

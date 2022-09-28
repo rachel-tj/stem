@@ -1,18 +1,25 @@
-*, *::before, *::after
-
+body
 {
-    box-sizing: border-box;
+    background-color: rgb(174, 200, 204);
     font-family: "cochin";
+}
+
+h2
+{
+    color: black;
     font-weight: normal;
-    font-size: 20px;
+    background-color: rgb(255, 255, 255, 0.7);
+    font-size: 50px;
+    height: 75px;
+    margin-top: 40px;
+    margin-inline: 350px;
+    border-radius: 8px;
+    text-align: center;;
 }
 
-body{
-    background-color: rgb(98, 98, 98);
-}
-
-h2, h3{
-    color: whitesmoke;
+h3
+{
+    color: black
 }
 
 #box {
@@ -22,13 +29,13 @@ h2, h3{
 #field table {
     border-collapse: collapse;
     font-size: 150%;
-    font-family: san-serif;
+    font-family: "cochin";
     font-weight: bold;
     display: inline-block;
 }
 
 #field table td {
-    background-color: rgb(195, 195, 195);
+    background-color: rgb(166, 166, 229);
     width: 30px;
     min-width: 30px;
     height: 30px;
@@ -36,11 +43,30 @@ h2, h3{
     border: 1px solid black;    
 }
 
-button {
-    width: 100px;
-    height: 30px;
-    background-color:rgb(195, 195, 195);
+#field table td:hover
+{
+    background-color: rgb(186, 186, 225);
+}
+
+button
+{
+    width: 150px;
+    height: 50px;
+    background-color:rgba(127, 185, 227, 0.43);
     color: black;
     font-weight: bolder;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+button:hover
+{
+    background-color: rgba(172, 198, 217, 0.784);
+}
+
+button:active
+{
+    box-shadow: none;
+    height: 40px;
+    width: 140px;
 }
