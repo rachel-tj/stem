@@ -1,7 +1,7 @@
 var components = {
-    num_of_rows : 12,
-    num_of_cols : 24,
-    num_of_bombs : 55,
+    numRows : 12,
+    numCols : 24,
+    numBombs : 40,
     bomb : '💣',
     alive : true,
     colors : {1: 'blue', 2: 'green', 3: 'red', 4: 'purple', 5: 'maroon', 6: 'turquoise', 7: 'black', 8: 'grey'}
@@ -16,7 +16,8 @@ function startGame()
 function placeBombs() {
     var i, rows = [];
     
-    for (i=0; i<components.num_of_bombs; i++) {
+    for (i = 0; i < components.numBombs; i++)
+    {
         placeSingleBomb(rows);
     }
     return rows;
@@ -26,11 +27,12 @@ function placeSingleBomb(bombs)
 {
 
     var nrow, ncol, row, col;
-    nrow = Math.floor(Math.random() * components.num_of_rows);
-    ncol = Math.floor(Math.random() * components.num_of_cols);
+    nrow = Math.floor(Math.random() * components.numRows);
+    ncol = Math.floor(Math.random() * components.numCols);
     row = bombs[nrow];
     
-    if (!row) {
+    if (!row)
+    {
         row = [];
         bombs[nrow] = row;
     }
@@ -58,10 +60,10 @@ function createTable()
     var table, row, td, i, j;
     table = document.createElement('table');
     
-    for (i=0; i<components.num_of_rows; i++)
+    for (i=0; i<components.numRows; i++)
     {
         row = document.createElement('tr');
-        for (j=0; j<components.num_of_cols; j++)
+        for (j=0; j<components.numCols; j++)
         {
             td = document.createElement('td');
             td.id = cellID(i, j);
@@ -90,10 +92,11 @@ function addCellListeners(td, i, j)
         {
             return;
         }
-        this.style.backgroundColor = 'lightGrey';
+        this.style.backgroundColor = 'thistle';
     });
 
-    td.addEventListener('mouseup', function(event) {
+    td.addEventListener('mouseup', function(event)
+    {
       
         if (!components.alive) {
             return;
@@ -133,29 +136,33 @@ function addCellListeners(td, i, j)
     };
 }
 
-function handleCellClick(cell, i, j) {
-    if (!components.alive) {
+function handleCellClick(cell, i, j)
+{
+    if (!components.alive)
+    {
         return;
     }
 
-    if (cell.flagged) {
+    if (cell.flagged)
+    {
         return;
     }
 
     cell.clicked = true;
 
     if (components.bombs[i][j]) {
-        cell.style.color = 'red';
+        cell.style.backgroundColor = 'lightcoral';
         cell.textContent = components.bomb;
         gameOver();
         
     }
     else {
-        cell.style.backgroundColor = 'lightGrey';
-        num_of_bombs = adjacentBombs(i, j);
-        if (num_of_bombs) {
-            cell.style.color = components.colors[num_of_bombs];
-            cell.textContent = num_of_bombs;
+        cell.style.backgroundColor = 'thistle'
+        numBombs = adjacentBombs(i, j);
+        if (numBombs)
+        {
+            cell.style.color = components.colors[numBombs];
+            cell.textContent = numBombs;
         } 
         else {
             clickAdjacentBombs(i, j);
@@ -164,17 +171,17 @@ function handleCellClick(cell, i, j) {
 }
 
 function adjacentBombs(row, col) {
-    var i, j, num_of_bombs;
-    num_of_bombs = 0;
+    var i, j, numBombs;
+    numBombs = 0;
 
     for (i=-1; i<2; i++) {
         for (j=-1; j<2; j++) {
             if (components.bombs[row + i] && components.bombs[row + i][col + j]) {
-                num_of_bombs++;
+                numBombs++;
             }
         }
     }
-    return num_of_bombs;
+    return numBombs;
 }
 
 function adjacentFlags(row, col) {
@@ -220,11 +227,13 @@ function gameOver() {
     
 }
 
-function reload(){
+function reload()
+{
     window.location.reload();
 }
 
-window.addEventListener('load', function() {
+window.addEventListener('load', function()
+{
     document.getElementById('lost').style.display="none";
     startGame();
 });
