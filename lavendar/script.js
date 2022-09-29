@@ -38,7 +38,12 @@ dataButtons.forEach(button =>
     var clearButton = document.getElementById("clear");
     clearButton.addEventListener('click', () =>
     {
-        
+        clearButton.style.backgroundColor = "red";
+        /*dataButtons.forEach(button =>
+        {
+            button.textContent = " ";
+            button.style.backgroundColor = "red";
+        })*/
     })
 
 
@@ -75,4 +80,9 @@ dataButtons.forEach(button =>
         {
             button.style.backgroundColor = "rgb(179, 195, 255, 0.7)";
         }
+    }
+
+    function reload()
+    {
+        window.location.reload();
     }

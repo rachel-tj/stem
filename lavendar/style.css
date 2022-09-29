@@ -92,12 +92,12 @@ h3
     background: red;
 }
 
-a
+#clear
 {
     font-size: 30px;
     color: black;
     padding: 30px;
-    width: 400px;
+    width: 200px;
     border-color: black;
     text-decoration: none;
     border-radius: 10px;
@@ -106,12 +106,12 @@ a
 }
 
 
-a:hover
+#clear:hover
 {
     background-color: rgb(255, 255, 255, 0.8);
 }
 
-a:active
+#clear:active
 {
     box-shadow: none;
     padding: 25px;
