@@ -1,8 +1,8 @@
 // it seems that these are the instance varibles
 var components = {
-    numRows : 16,
-    numCols : 16,
-    factor : 0.7,
+    numRows : 11,
+    numCols : 11,
+    factor : 0.6,
     lives : 3,
     alive : true,
     completed : 0,
@@ -87,53 +87,17 @@ function addCellListeners(td, i, j)
 {
     td.addEventListener('mousedown', function(event)
     {
-        if (!components.alive)
-        {
-            return;
-        }
-        if (event.which === 1)
-        {
-            if (td.textContent)
-            {
-                return;
-            }
-            if (this.bomb)
-            {
-                this.style.backgroundColor = 'mediumpurple';
-                this.clicked = true;
-                testRowBlocks(i);
-                testColBlocks(j);
-                return;
-            }
-            //this.style.backgroundColor = '#E96982';
-            this.style.color = 'crimson';
-            components.lives--;
-            this.textContent = 'X';
-            if (!components.lives)
-            {
-                gameOver();
-                return;
-            }
-        }
-        else if (event.which === 3 && !this.clicked)
-        {
-            if (!this.flagged)
-            {
-                this.flagged = true;
-                this.textContent = 'X';
-            }
-            else
-            {
-                this.flagged = false;
-                this.textContent = '';
-            }
-        }
-        td.oncontextmenu = function()
-        { 
-            return false; 
-        };
+        handleEvent(td, i, j, event);
+    })
+    td.addEventListener('mousemove', function(event)
+    {
+        handleEvent(td, i, j, event);
+    })
 
-    });
+    td.addEventListener('mouseup', function(event)
+    {
+        //smth
+    })
 }
 
 function placeSquares(td)
@@ -218,6 +182,7 @@ function testRowBlocks(row)
         if (!cell.bomb)
         {
             cell.textContent = 'X';
+            cell.clicked = true;
         }
     }
 }
@@ -247,6 +212,7 @@ function testColBlocks(col)
         if (!cell.bomb)
         {
             cell.textContent = 'X';
+            cell.clicked = true;
         }
     }
     if (components.completed === (components.numRows + components.numCols - 2))
@@ -272,6 +238,59 @@ function gameOver()
 }
 
 
+function handleEvent(td, i, j, event)
+{
+    td.oncontextmenu = function()
+        { 
+            return false; 
+        };
+        if (!components.alive || !i || !j || td.clicked)
+        {
+            return;
+        }
+        if (event.which === 1)
+        {
+            if (td.textContent)
+            {
+                return;
+            }
+            if (td.bomb)
+            {
+                td.style.backgroundColor = 'mediumpurple';
+                td.clicked = true;
+                testRowBlocks(i);
+                testColBlocks(j);
+                return;
+            }
+            td.style.color = 'crimson';
+            components.lives--;
+            td.textContent = 'X';
+            cell.clicked = true;
+            if (!components.lives)
+            {
+                gameOver();
+                return;
+            }
+        }
+        else if (event.which === 3 && !td.clicked)
+        {
+            if (!td.flagged)
+            {
+                td.flagged = true;
+                td.textContent = 'X';
+            }
+            else
+            {
+                td.flagged = false;
+                td.textContent = '';
+            }
+        }
+}
+
+
+
+
+
 
 // reload the winodw
 function reload()
@@ -283,6 +302,8 @@ function reload()
 window.addEventListener('load', function()
 {
     document.getElementById('lost').style.display="none";
+    var all = document.getElementById('field');
+        all.onselectstart = () => { return false; }
     startGame();
 });
 
