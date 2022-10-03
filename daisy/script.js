@@ -56,9 +56,16 @@ function changeColors(td, i, j)
         td.style.backgroundColor = 'rgb(0, 0, 0, 0)';
         td.style.border = 'none';
         if (j === 0)
-            td.style.width = '60px';
+        {
+            td.style.width = '100px';
+            td.style.textAlign= 'right';
+            td.style.marginRight = '100px';
+        }
         else
+        {
             td.style.height = '60px';
+            td.style.textAlign = 'bottom';
+        }
     }
 }
 
