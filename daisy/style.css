@@ -1,0 +1,79 @@
+body
+{
+    background-color: #D5ACD5;
+    font-family: "cochin";
+}
+
+h2
+{
+    color: black;
+    font-weight: normal;
+    background-color: rgb(255, 255, 255, 0.7);
+    font-size: 50px;
+    height: 75px;
+    margin-top: 40px;
+    margin-inline: 350px;
+    border-radius: 8px;
+    text-align: center;;
+}
+
+h3
+{
+    color: black;
+    font-weight: normal;
+    margin-inline: 350px;
+}
+
+#box {
+    text-align: center;
+}
+
+#field table
+{
+    border-collapse: collapse;
+    font-size: 125%;
+    font-family: "cochin";
+    font-weight: bold;
+    display: inline-block;
+}
+
+#field table td {
+    background-color: lightsteelblue;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    min-height: 30px;
+    border: 1px solid black;    
+}
+
+#field table td:hover
+{
+    background-color: rgb(186, 186, 225);
+}
+
+
+button
+{
+    width: 150px;
+    height: 50px;
+    font-family: "cochin";
+    background-color:rgba(127, 185, 227, 0.43);
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    border-radius: 8px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 50px;
+}
+
+button:hover
+{
+    background-color: rgba(172, 198, 217, 0.784);
+}
+
+button:active
+{
+    box-shadow: none;
+    height: 40px;
+    width: 140px;
+}
