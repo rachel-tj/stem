@@ -3,6 +3,7 @@ var components = {
     numRows : 11,
     numCols : 11,
     factor : 0.7,
+    lives : 3
 }
 
 // starts the game!
@@ -79,8 +80,14 @@ function addCellListeners(td)
             }
             //this.style.backgroundColor = '#E96982';
             this.style.color = 'crimson';
+            components.lives--;
             this.textContent = 'X';
             this.clicked = true;
+            if (components.lives === 0)
+            {
+                gameOver();
+                return;
+            }
         }
         else if (event.which === 3 && !this.clicked)
         {
@@ -161,7 +168,12 @@ function traverse(reverse)
 }
 
 
-
+function gameOver()
+{
+    components.alive = false;
+    document.getElementById('lost').style.display="block";
+   
+}
 
 
 
