@@ -1,7 +1,7 @@
 // it seems that these are the instance varibles
 var components = {
-    numRows : 16,
-    numCols : 16,
+    numRows : 6,
+    numCols : 6,
     factor : 0.7,
     lives : 3,
     alive : true,
@@ -259,7 +259,15 @@ function testColBlocks(col)
 function gameOver()
 {
     components.alive = false;
-    document.getElementById('lost').style.display="block";
+    if (components.lives)
+    {
+        document.getElementById('won').style.display="block";
+    }
+    else
+    {
+        document.getElementById('lost').style.display="block";
+    }
+    document.getElementById('over').style.display="block";
    
 }
 
