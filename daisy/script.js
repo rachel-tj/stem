@@ -1,7 +1,7 @@
 // it seems that these are the instance varibles
 var components = {
-    numRows : 6,
-    numCols : 6,
+    numRows : 16,
+    numCols : 16,
     factor : 0.7,
     lives : 3,
     alive : true,
