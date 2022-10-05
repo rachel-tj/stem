@@ -16,40 +16,58 @@ function startGame()
 
 function startButton()
 {
-    easy = document.getElementById('easy');
-    easy.addEventListener('mouseup', function()
+    small = document.getElementById('small');
+    small.addEventListener('mouseup', function()
     {
-        document.getElementById('field').style.display="block";
-        this.style.display="none";
-        document.getElementById('medium').style.display="none";
-        document.getElementById('hard').style.display="none";
+        
         components.numRows = components.numCols = 6;
-        table = document.getElementById('field').appendChild(createTable());
-        setNumbers();
+        doSetUp();
     })
+
     medium = document.getElementById('medium');
     medium.addEventListener('mouseup', function()
     {
-        document.getElementById('field').style.display="block";
-        this.style.display="none";
-        document.getElementById('easy').style.display="none";
-        document.getElementById('hard').style.display="none";
         components.numRows = components.numCols = 11;
-        table = document.getElementById('field').appendChild(createTable());
-        setNumbers();
+        doSetUp();
     })
-    hard = document.getElementById('hard');
-    hard.addEventListener('mouseup', function()
+
+    large = document.getElementById('large');
+    large.addEventListener('mouseup', function()
     {
-        document.getElementById('field').style.display="block";
-        this.style.display="none";
-        document.getElementById('easy').style.display="none";
-        document.getElementById('medium').style.display="none";
         components.numRows = components.numCols = 16;
-        table = document.getElementById('field').appendChild(createTable());
-        setNumbers();
+        doSetUp();
     })
     
+    easy = document.getElementById('easy');
+    easy.addEventListener('mouseup', function()
+    {
+        components.factor = 0.7;
+        console.log(components.factor);
+    })
+
+    mid = document.getElementById('mid');
+    mid.addEventListener('mouseup', function()
+    {
+        components.factor = 0.5;
+        console.log(components.factor);
+    })
+
+    difficult = document.getElementById('difficult');
+    difficult.addEventListener('mouseup', function()
+    {
+        components.factor = 0.3;
+        console.log(components.factor);
+    })
+    
+}
+
+function doSetUp()
+{
+    document.getElementById('field').style.display="block";
+    document.getElementById('sizebuttons').style.display="none";
+    document.getElementById('difficulty').style.display="none";
+    table = document.getElementById('field').appendChild(createTable());
+    setNumbers();
 }
 
 function setNumbers()
@@ -226,7 +244,6 @@ function testRowBlocks(row)
             cell.clicked = true;
         }
     }
-    console.log(components.completed);
 }
 
 function testColBlocks(col)
@@ -266,17 +283,14 @@ function testColBlocks(col)
 
 function gameOver()
 {
-    console.log('game over');
     components.alive = false;
     if (components.lives)
     {
-        console.log('you won');
         document.getElementById('won').style.display="block";
         document.getElementById('overbuttons').style.display="block";
     }
     else
     {
-        console.log('you lost');
         document.getElementById('lost').style.display="block";
         document.getElementById('overbuttons').style.display="block";
     }
@@ -304,7 +318,6 @@ function handleEvent(td, i, j, event)
             {
                 td.style.backgroundColor = 'mediumpurple';
                 td.clicked = true;
-                console.log("checking");
                 testRowBlocks(i);
                 testColBlocks(j);
                 return;

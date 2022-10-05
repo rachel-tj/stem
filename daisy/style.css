@@ -67,6 +67,8 @@ button
     border-radius: 8px;
     box-shadow: 5px 10px rgba(0, 0, 0, 0.4);
     margin-bottom: 50px;
+    margin-inline: 20px;
+    margin-top: 20px;
 }
 
 button:hover
@@ -79,4 +81,17 @@ button:active
     box-shadow: none;
     height: 40px;
     width: 140px;
+}
+
+#sizebuttons > button:after, #difficulty> button:focus
+{
+    box-shadow: none;
+    height: 40px;
+    width: 140px;
+}
+
+h4
+{
+    font-size: 25px;
+    margin-bottom: 30px;
 }
