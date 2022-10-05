@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nonogram</title>
     <link href="style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="x.png">
+    <link rel="icon" type="image/png" href="bomb.png">
     <script src="script.js"></script>
 </head>
 <body>
@@ -14,15 +14,21 @@
         <div id="box">
            <h2>nonogram!!</h2><hr><br><br>
            <h3>dedicated rachel from calc ii because she's always playing this game in class instead of taking notes (jk she does both #builtdifferent)
-            <br><br>
+            <br>
             right-click to put an 'X'
             </h3>
-              <div id="field"></div>
+            <button id="easy">easy</button>
+            <button id="medium">medium</button>
+            <button id="hard">hard</button>
+              <div id="field" style="display: none"></div>
               <br>
             <div id="over" style="display: none;">
-              <h3 id="lost" style = "display:none">you just lost the game. fuck you.</h3>
+              <h3 id="lost" style = "display:none">you just lost the game.</h3>
               <h3 id="won" style = "display:none">congrats!! you have won the game!!!!</h3>
-              <button id="new-game-button" type="button" onclick="reload()">play again</button>
+            </div>
+            <div id="overbuttons" style="display:none">
+              <button id="restart" type="button" onclick="reload()">new level</button>
+              <button id="new-level" type="button" onclick="newGame()">restart</button>
             </div>         
         </div>
   </body>

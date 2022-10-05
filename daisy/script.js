@@ -11,8 +11,45 @@ var components = {
 // starts the game!
 function startGame()
 {
-    table = document.getElementById('field').appendChild(createTable());
-    setNumbers();
+    startButton();
+}
+
+function startButton()
+{
+    easy = document.getElementById('easy');
+    easy.addEventListener('mouseup', function()
+    {
+        document.getElementById('field').style.display="block";
+        this.style.display="none";
+        document.getElementById('medium').style.display="none";
+        document.getElementById('hard').style.display="none";
+        components.numRows = components.numCols = 6;
+        table = document.getElementById('field').appendChild(createTable());
+        setNumbers();
+    })
+    medium = document.getElementById('medium');
+    medium.addEventListener('mouseup', function()
+    {
+        document.getElementById('field').style.display="block";
+        this.style.display="none";
+        document.getElementById('easy').style.display="none";
+        document.getElementById('hard').style.display="none";
+        components.numRows = components.numCols = 11;
+        table = document.getElementById('field').appendChild(createTable());
+        setNumbers();
+    })
+    hard = document.getElementById('hard');
+    hard.addEventListener('mouseup', function()
+    {
+        document.getElementById('field').style.display="block";
+        this.style.display="none";
+        document.getElementById('easy').style.display="none";
+        document.getElementById('medium').style.display="none";
+        components.numRows = components.numCols = 16;
+        table = document.getElementById('field').appendChild(createTable());
+        setNumbers();
+    })
+    
 }
 
 function setNumbers()
@@ -224,16 +261,20 @@ function testColBlocks(col)
 
 function gameOver()
 {
+    console.log('game over');
     components.alive = false;
     if (components.lives)
     {
-        document.getElementById('won').style.display="block";
+        console.log('you won');
+        document.getElementById('lost').style.display="none";
+        document.getElementById('overbuttons').style.display="block";
     }
     else
     {
-        document.getElementById('lost').style.display="block";
+        console.log('you lost');
+        document.getElementById('won').style.display="none";
+        document.getElementById('overbuttons').style.display="block";
     }
-    document.getElementById('over').style.display="block";
    
 }
 
@@ -289,6 +330,20 @@ function handleEvent(td, i, j, event)
 
 
 
+
+function newGame()
+{
+    components.alive = true;
+    components.lives = 3;
+    components.completed = 0;
+    document.getElementById('won').style.display="none";
+    document.getElementById('lost').style.display="none";
+    document.getElementById('overbuttons').style.display="none";
+    //clear();
+    table.remove();
+    table = document.getElementById('field').appendChild(createTable());
+    setNumbers();
+}
 
 
 
