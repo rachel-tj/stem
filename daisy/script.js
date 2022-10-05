@@ -2,7 +2,7 @@
 var components = {
     numRows : 11,
     numCols : 11,
-    factor : 0.6,
+    factor : 0.7,
     lives : 3,
     alive : true,
     completed : 0,
@@ -179,13 +179,17 @@ function traverse(reverse)
         }
         if (count)
             add += count;
+        if (!add && i && j)
+            add = '0';
         if (reverse)
         {
+            testRowBlocks(i);
             zerocell = document.getElementById(cellID(0, i));
             zerocell.textContent = add
         }
         else
         {
+            testColBlocks(i);
             zerocell = document.getElementById(cellID(i, 0));
             zerocell.textContent = add
         }
@@ -222,6 +226,7 @@ function testRowBlocks(row)
             cell.clicked = true;
         }
     }
+    console.log(components.completed);
 }
 
 function testColBlocks(col)
@@ -252,7 +257,7 @@ function testColBlocks(col)
             cell.clicked = true;
         }
     }
-    if (components.completed === (components.numRows + components.numCols - 2))
+    if (components.completed === (components.numRows + components.numCols))
     {
         gameOver();
     }
@@ -266,13 +271,13 @@ function gameOver()
     if (components.lives)
     {
         console.log('you won');
-        document.getElementById('lost').style.display="none";
+        document.getElementById('won').style.display="block";
         document.getElementById('overbuttons').style.display="block";
     }
     else
     {
         console.log('you lost');
-        document.getElementById('won').style.display="none";
+        document.getElementById('lost').style.display="block";
         document.getElementById('overbuttons').style.display="block";
     }
    
@@ -299,6 +304,7 @@ function handleEvent(td, i, j, event)
             {
                 td.style.backgroundColor = 'mediumpurple';
                 td.clicked = true;
+                console.log("checking");
                 testRowBlocks(i);
                 testColBlocks(j);
                 return;
