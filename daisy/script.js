@@ -17,30 +17,42 @@ function startGame()
 function startButton()
 {
     small = document.getElementById('small');
+    medium = document.getElementById('medium');
+    large = document.getElementById('large');
+
     small.addEventListener('mouseup', function()
     {
-        
+        depressButton(this);
+        openButton(medium);
+        openButton(large);
         components.numRows = components.numCols = 6;
-        doSetUp();
+        //doSetUp();
     })
-
-    medium = document.getElementById('medium');
+    
     medium.addEventListener('mouseup', function()
     {
+        depressButton(this);
+        openButton(small);
+        openButton(large);
         components.numRows = components.numCols = 11;
-        doSetUp();
+        //doSetUp();
     })
 
-    large = document.getElementById('large');
     large.addEventListener('mouseup', function()
     {
+        depressButton(this);
+        openButton(small);
+        openButton(medium);
         components.numRows = components.numCols = 16;
-        doSetUp();
+        //doSetUp();
     })
     
     easy = document.getElementById('easy');
     easy.addEventListener('mouseup', function()
     {
+        depressButton(this);
+        openButton(mid);
+        openButton(difficult);
         components.factor = 0.7;
         console.log(components.factor);
     })
@@ -48,6 +60,9 @@ function startButton()
     mid = document.getElementById('mid');
     mid.addEventListener('mouseup', function()
     {
+        depressButton(this);
+        openButton(easy);
+        openButton(difficult);
         components.factor = 0.5;
         console.log(components.factor);
     })
@@ -55,8 +70,16 @@ function startButton()
     difficult = document.getElementById('difficult');
     difficult.addEventListener('mouseup', function()
     {
+        depressButton(this);
+        openButton(easy);
+        openButton(mid);
         components.factor = 0.3;
         console.log(components.factor);
+    })
+
+    document.getElementById('go').addEventListener('mouseup', function()
+    {
+        doSetUp();
     })
     
 }
@@ -295,6 +318,20 @@ function gameOver()
         document.getElementById('overbuttons').style.display="block";
     }
    
+}
+
+function depressButton(button)
+{
+    button.style.boxShadow = 'none';
+    button.style.height = '40px';
+    button.style.width = '140px';
+}
+
+function openButton(button)
+{
+    button.style.boxShadow = '5px 10px rgba(0, 0, 0, 0.4)';
+    button.style.height = '50px';
+    button.style.width = '150px';
 }
 
 

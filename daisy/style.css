@@ -71,6 +71,11 @@ button
     margin-top: 20px;
 }
 
+.go
+{
+    background-color: 'yellow';
+}
+
 button:hover
 {
     background-color: rgba(172, 198, 217, 0.784);
@@ -83,12 +88,12 @@ button:active
     width: 140px;
 }
 
-#sizebuttons > button:after, #difficulty> button:focus
+/*#sizebuttons > button:focus, #difficulty> button:focus
 {
     box-shadow: none;
     height: 40px;
     width: 140px;
-}
+}*/
 
 h4
 {
