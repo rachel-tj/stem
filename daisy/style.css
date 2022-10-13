@@ -71,9 +71,16 @@ button
     margin-top: 20px;
 }
 
-.go
+#go
 {
-    background-color: 'yellow';
+    height: 70px;
+    font-size: 30px;
+    background-color: rgb(188, 169, 230);
+}
+
+#go:hover
+{
+    background-color: rgb(201, 182, 241);
 }
 
 button:hover
