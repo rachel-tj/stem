@@ -96,7 +96,7 @@ button:active
 .key:active
 {
     height: 45px;
-    width: 45px;
+    width: 50px;
 }
 
 #lost, #won
@@ -104,4 +104,17 @@ button:active
     font-family: cochin;
     font-size: 30px;
     margin-bottom: 20px;
+}
+
+#del, #enter
+{
+    width: 80px;
+    font-size: 20px;
+}
+
+#new-game-button
+{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    height: 60px;
 }

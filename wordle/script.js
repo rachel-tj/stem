@@ -1,11 +1,13 @@
 // it seems that these are the instance varibles
 
-var comp = {
+const comp = {
+    word : 'skate',
     numTrys : 6,
     numLetters : 5,
-    word : 'covey',
     currRow : 0,
     currLetter : 0,
+    over : false,
+    names : [],
 }
 
 // starts the game!
@@ -19,6 +21,39 @@ function cellID(i, j)
 {
     return 'cell-' + i + '-' + j;
 }
+
+async function checkEnglish(filename, string)
+{
+    console.log(string);
+    fetch (filename)
+    .then(function(response)
+    {
+        return response.text();
+    })
+    .then(function(data)
+    {
+        if (data.indexOf(string) != -1)
+        {
+            checkLetter()
+        }
+        else
+        {
+            changeToRed();
+        }
+    })
+}
+
+function changeToRed()
+{
+    for (i = 0; i < comp.currLetter; i++)
+    {
+        var cellid = cellID(comp.currRow, i);
+        cell = document.getElementById(cellid);
+        cell.style.color = 'crimson';
+    }
+}
+
+
 
 
 
@@ -50,9 +85,27 @@ function addKeyListners()
     {
         key.addEventListener('mousedown', function ()
         {
-            var cellid = cellID(comp.currRow, comp.currLetter++);
-            cell = document.getElementById(cellid);
-            cell.textContent = key.id;
+            if (key.id === 'enter')
+            {
+                handleEnter();
+            }
+            else if (key.id === 'del')
+            {
+                handleDelete();
+            }
+            else if (comp.currLetter >= 5 || comp.currRow >= 6)
+            {
+                return;
+            }
+            else
+            {
+                var cellid = cellID(comp.currRow, comp.currLetter++);
+                cell = document.getElementById(cellid);
+                if (!comp.over && comp.currLetter <= comp.numLetters)
+                {
+                    cell.textContent = key.id;
+                }
+            }
         });
     });
 
@@ -62,16 +115,13 @@ function addKeyListners()
         num = event.key.charCodeAt();
         if (num === 66 && comp.currLetter)
         {
-            var cellid = cellID(comp.currRow, --comp.currLetter);
-            cell = document.getElementById(cellid);
-            cell.textContent = '';
+            handleDelete();
             return;
         }
-        test: if (num >= 97 && num <=122)
+        test: if (num >=97 && num <= 122 && !comp.over)
         {
             if (comp.currLetter >= 5 || comp.currRow >= 6)
             {
-                console.log('break');
                 break test;
             }
             var cellid = cellID(comp.currRow, comp.currLetter++);
@@ -80,18 +130,7 @@ function addKeyListners()
         }
         if (num === 69)
         {
-            console.log('skgs');
-            if (comp.currLetter < comp.numLetters)
-            {
-                return;
-            }
-            console.log('cehcl');
-            checkLetter();
-            if (comp.currRow === comp.numTrys)
-            {
-                document.getElementById('lost').style.display="block";   
-                document.getElementById('over').style.display="block";
-            }
+            handleEnter();
         }
     });
 }
@@ -119,7 +158,10 @@ function checkLetter()
             else
             {
                 cell.style.background = 'gold';
-                keyletter.style.background = 'gold';
+                if (keyletter.style.background != 'mediumseagreen')
+                {
+                    keyletter.style.background = 'gold';
+                }
             }
         }
         else
@@ -128,15 +170,70 @@ function checkLetter()
             keyletter.style.background = 'grey';
         }
     }
-    console.log(count);
     if (count === comp.numLetters)
     {
         document.getElementById('won').style.display="block";
         document.getElementById('over').style.display="block";
+        comp.over = true;
     }
     comp.currLetter = 0;
     comp.currRow++;
-    console.log('retunr')
+}
+
+function handleEnter()
+{
+    if (comp.currLetter < comp.numLetters)
+    {
+        return;
+    }
+    var string = '';
+    for (i = 0; i < comp.numLetters; i++)
+    {
+        var cellid = cellID(comp.currRow, i)
+        var cell = document.getElementById(cellid);
+        var letter = cell.textContent;
+        string += letter
+    }
+   checkEnglish('words.txt', string)
+    /*{
+        console.log('real');
+        checkLetter();
+        return;
+    }
+    else
+    {
+        // always this
+        console.log('not real');
+    }*/
+    console.log('S;KJG')
+    console.log(comp.currRow, ' ', comp.numTrys)
+    if (comp.currRow  + 1 === comp.numTrys && !comp.over)
+    {
+        comp.over = true;
+        document.getElementById('lost').style.display="block";   
+        document.getElementById('over').style.display="block";
+    }
+}
+
+
+function handleDelete()
+{
+    if (!comp.currLetter)
+    {
+        return;
+    }
+    var cellid = cellID(comp.currRow, --comp.currLetter);
+    cell = document.getElementById(cellid);
+    cell.textContent = '';
+    if (comp.currLetter === comp.numLetters - 1)
+    {
+        for (i = 0; i < comp.numLetters; i++)
+        {
+            var cellid = cellID(comp.currRow, i);
+            cell = document.getElementById(cellid);
+            cell.style.color = 'black';
+        }
+    }
 }
 
 
@@ -146,7 +243,7 @@ function checkLetter()
 // the game is over and all of the cells are dead :)
 function gameOver()
 {
-    comp.alive = false;
+    comp.over = true;
     document.getElementById('over').style.display="block";
     
 }
