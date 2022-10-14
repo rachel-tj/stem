@@ -1,7 +1,7 @@
 // it seems that these are the instance varibles
 
 const comp = {
-    word : 'skate',
+    word: 'bitch',
     numTrys : 6,
     numLetters : 5,
     currRow : 0,
@@ -11,10 +11,32 @@ const comp = {
 }
 
 // starts the game!
-function startGame()
+async function startGame()
 {
+    comp.word = await makeWord('words.txt');
+    var x = document.createTextNode(comp.word + '.')
+    document.getElementById('lost').appendChild(x);
+    console.log(comp.word);
     document.getElementById('field').appendChild(createTable());
 }
+
+
+async function makeWord(filename)
+{
+    const rand = fetch (filename)
+    .then(function(response)
+    {
+        return response.text();
+    })
+    .then(function(data)
+    {
+        var words = data.split('\n');
+        x =  words[Math.floor(Math.random() * words.length)];
+        return x;
+    })
+    return rand;
+}
+
 
 
 function cellID(i, j)
@@ -24,7 +46,6 @@ function cellID(i, j)
 
 async function checkEnglish(filename, string)
 {
-    console.log(string);
     fetch (filename)
     .then(function(response)
     {
@@ -149,7 +170,7 @@ function checkLetter()
         cell.style.animation = 'fadeIn 3s'
         if (place != -1)
         {
-            if (place == i)
+            if (comp.word.charAt(i) === letter)
             {
                 cell.style.background = 'mediumseagreen';
                 keyletter.style.background = 'mediumseagreen';
@@ -178,6 +199,12 @@ function checkLetter()
     }
     comp.currLetter = 0;
     comp.currRow++;
+    if (comp.currRow === comp.numTrys && !comp.over)
+    {
+        comp.over = true;
+        document.getElementById('lost').style.display="block";   
+        document.getElementById('over').style.display="block";
+    }
 }
 
 function handleEnter()
@@ -194,25 +221,7 @@ function handleEnter()
         var letter = cell.textContent;
         string += letter
     }
-   checkEnglish('words.txt', string)
-    /*{
-        console.log('real');
-        checkLetter();
-        return;
-    }
-    else
-    {
-        // always this
-        console.log('not real');
-    }*/
-    console.log('S;KJG')
-    console.log(comp.currRow, ' ', comp.numTrys)
-    if (comp.currRow  + 1 === comp.numTrys && !comp.over)
-    {
-        comp.over = true;
-        document.getElementById('lost').style.display="block";   
-        document.getElementById('over').style.display="block";
-    }
+   checkEnglish('words.txt', string) 
 }
 
 
