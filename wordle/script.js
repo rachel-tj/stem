@@ -3,7 +3,7 @@
 var comp = {
     numTrys : 6,
     numLetters : 5,
-    word : 'bitch',
+    word : 'qanon',
     currRow : 0,
     currLetter : 0,
 }
