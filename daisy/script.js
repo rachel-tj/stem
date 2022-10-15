@@ -1,3 +1,12 @@
+/*
+* @author deadfishh
+*
+* this is nonogram
+* i wrote it all except for the grid
+* if you know how to make a grid hmu
+* clicking boxes is fun though!!!
+*/
+
 // it seems that these are the instance varibles
 var components = {
     numRows : 11,
