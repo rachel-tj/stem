@@ -4,8 +4,11 @@ this one is my favorite!!! the way that it lights up in red when you do somethin
 
 
 O, Jenny's a' weet, poor body,
+
 Jenny's seldom dry:
+
 She draigl't a' her petticoatie,
+
 Comin thro' the rye!
 
 Comin thro' the rye, poor body,
