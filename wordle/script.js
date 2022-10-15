@@ -1,4 +1,10 @@
-// it seems that these are the instance varibles
+/*
+* @author deadfishh
+*
+* this is wordle, which i wrote
+* it is a worse version of the new york times wordle
+* but fuck the new york times
+*/
 
 const comp = {
     word: 'bitch',
@@ -14,8 +20,8 @@ const comp = {
 async function startGame()
 {
     comp.word = await makeWord('words.txt');
-    var x = document.createTextNode(comp.word + '.')
-    document.getElementById('lost').appendChild(x);
+    var x = document.createTextNode(comp.word)
+    document.getElementById('theWord').appendChild(x);
     console.log(comp.word);
     document.getElementById('field').appendChild(createTable());
 }

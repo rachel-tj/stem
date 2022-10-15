@@ -102,7 +102,7 @@ button:active
 #lost, #won
 {
     font-family: cochin;
-    font-size: 30px;
+    font-size:25px;
     margin-bottom: 20px;
 }
 
@@ -117,4 +117,13 @@ button:active
     margin-top: 30px;
     margin-bottom: 50px;
     height: 60px;
+    font-size: 25px;
+}
+
+#theWord
+{
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 35px;
+    margin: 10px;
 }
