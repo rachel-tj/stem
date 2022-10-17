@@ -19,7 +19,7 @@ const comp = {
 // starts the game!
 async function startGame()
 {
-    //comp.word = await makeWord('words.txt');
+    comp.word = await makeWord('words.txt');
     var x = document.createTextNode(comp.word)
     document.getElementById('theWord').appendChild(x);
     console.log(comp.word);
