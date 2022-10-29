@@ -1,48 +1,114 @@
 /*
 * @author deadfishh
 *
-* this is wordle, which i wrote
-* it is a worse version of the new york times wordle
-* but fuck the new york times
+* nonogram!!!!
+* click the squares blah blah blah
+* it does have a click and drag feature which is fun
 */
 
-const comp = {
-    word: 'qanon',
-    numTrys : 6,
-    numLetters : 5,
-    currRow : 0,
-    currLetter : 0,
-    over : false,
-    names : [],
+
+// it seems that these are the instance varibles
+var components = {
+    numRows : 11,
+    numCols : 11,
+    factor : 0.7,
+    lives : 3,
+    alive : true,
+    completed : 0,
 }
 
 // starts the game!
-async function startGame()
+function startGame()
 {
-    comp.word = await makeWord('words.txt');
-    var x = document.createTextNode(comp.word)
-    document.getElementById('theWord').appendChild(x);
-    console.log(comp.word);
-    document.getElementById('field').appendChild(createTable());
+    startButton();
 }
 
-
-async function makeWord(filename)
+function startButton()
 {
-    const rand = fetch (filename)
-    .then(function(response)
+    small = document.getElementById('small');
+    medium = document.getElementById('medium');
+    large = document.getElementById('large');
+
+    small.addEventListener('mouseup', function()
     {
-        return response.text();
+        depressButton(this);
+        openButton(medium);
+        openButton(large);
+        components.numRows = components.numCols = 6;
+        //doSetUp();
     })
-    .then(function(data)
+    
+    medium.addEventListener('mouseup', function()
     {
-        var words = data.split('\n');
-        x =  words[Math.floor(Math.random() * words.length)];
-        return x;
+        depressButton(this);
+        openButton(small);
+        openButton(large);
+        components.numRows = components.numCols = 11;
+        //doSetUp();
     })
-    return rand;
+
+    large.addEventListener('mouseup', function()
+    {
+        depressButton(this);
+        openButton(small);
+        openButton(medium);
+        components.numRows = components.numCols = 16;
+        //doSetUp();
+    })
+    
+    easy = document.getElementById('easy');
+    easy.addEventListener('mouseup', function()
+    {
+        depressButton(this);
+        openButton(mid);
+        openButton(difficult);
+        components.factor = 0.7;
+        console.log(components.factor);
+    })
+
+    mid = document.getElementById('mid');
+    mid.addEventListener('mouseup', function()
+    {
+        depressButton(this);
+        openButton(easy);
+        openButton(difficult);
+        components.factor = 0.5;
+        console.log(components.factor);
+    })
+
+    difficult = document.getElementById('difficult');
+    difficult.addEventListener('mouseup', function()
+    {
+        depressButton(this);
+        openButton(easy);
+        openButton(mid);
+        components.factor = 0.3;
+        console.log(components.factor);
+    })
+
+    document.getElementById('go').addEventListener('mouseup', function()
+    {
+        doSetUp();
+    })
+    
 }
 
+function doSetUp()
+{
+    document.getElementById('field').style.display="block";
+    document.getElementById('sizebuttons').style.display="none";
+    document.getElementById('difficulty').style.display="none";
+    table = document.getElementById('field').appendChild(createTable());
+    setNumbers();
+}
+
+function setNumbers()
+{
+    let reverse = false;
+    traverse(reverse);
+    reverse = true;
+    traverse(reverse);
+}
 
 
 function cellID(i, j)
@@ -50,218 +116,335 @@ function cellID(i, j)
     return 'cell-' + i + '-' + j;
 }
 
-async function checkEnglish(filename, string)
-{
-    fetch (filename)
-    .then(function(response)
-    {
-        return response.text();
-    })
-    .then(function(data)
-    {
-        if (data.indexOf(string) != -1)
-        {
-            checkLetter()
-        }
-        else
-        {
-            changeToRed();
-        }
-    })
-}
-
-function changeToRed()
-{
-    for (i = 0; i < comp.currLetter; i++)
-    {
-        var cellid = cellID(comp.currRow, i);
-        cell = document.getElementById(cellid);
-        cell.style.color = 'crimson';
-    }
-}
-
-
-
-
-
+// ???
 function createTable()
 {
     var table, row, td, i, j;
     table = document.createElement('table');
     
-    for (i=0; i<comp.numTrys; i++)
+    for (i=0; i<components.numRows; i++)
     {
         row = document.createElement('tr');
-        for (j=0; j<comp.numLetters; j++)
+        for (j=0; j<components.numCols; j++)
         {
             td = document.createElement('td');
             td.id = cellID(i, j);
             row.appendChild(td);
+            if (i && j)
+            {
+                placeSquares(td);
+            }
+            changeColors(td, i, j);
+            addCellListeners(td, i, j);
         }
         table.appendChild(row);
     }
-    addKeyListners();
     return table;
 }
 
-
-function addKeyListners()
+function changeColors(td, i, j)
 {
-    const keys = document.querySelectorAll('.key');
-    keys.forEach(key =>
+    if (!i|| !j)
     {
-        key.addEventListener('mousedown', function ()
+        td.style.backgroundColor = 'rgb(0, 0, 0, 0)';
+        td.style.border = 'none';
+        if (!j)
         {
-            if (key.id === 'enter')
+            td.style.width = '150px';
+            td.style.textAlign= 'right';
+            td.style.marginRight = '100px';
+        }
+        else
+        {
+            td.style.height = '60px';
+            td.style.textAlign = 'flex';
+        }
+    }
+    if (j % 5 === 0 && i)
+    {
+        td.style.borderRight = '2.5px solid black';
+    }
+    if (i % 5 === 0 && j)
+    {
+        td.style.borderBottom = '2.5px solid black';
+    }
+}
+
+function addCellListeners(td, i, j)
+{
+    td.addEventListener('mousedown', function(event)
+    {
+        handleEvent(td, i, j, event);
+    })
+    td.addEventListener('mousemove', function(event)
+    {
+        handleEvent(td, i, j, event);
+    })
+
+    td.addEventListener('mouseup', function(event)
+    {
+        //smth
+    })
+}
+
+function placeSquares(td)
+{
+    number = Math.random();
+    if (number <= components.factor)
+    {
+        td.bomb = true;
+    }
+}
+
+function traverse(reverse)
+{
+    var i, j;
+    let count = 0;
+    for (i = 0; i< components.numRows; i++)
+    {
+        var add = '';
+        for (j = 0; j< components.numCols; j++)
+        {
+            if (reverse)
             {
-                handleEnter();
-            }
-            else if (key.id === 'del')
-            {
-                handleDelete();
-            }
-            else if (comp.currLetter >= comp.numLetters || comp.currRow >= comp.numTrys)
-            {
-                return;
+                var cellid = cellID(j, i);
             }
             else
             {
-                var cellid = cellID(comp.currRow, comp.currLetter++);
-                cell = document.getElementById(cellid);
-                if (!comp.over && comp.currLetter <= comp.numLetters)
-                {
-                    cell.textContent = key.id;
-                }
+                var cellid = cellID(i, j);
             }
-        });
-    });
-
-    addEventListener('keydown', function(event)
-    {
-        body = document.getElementById('body');
-        num = event.key.charCodeAt();
-        if (num === 66 && comp.currLetter)
-        {
-            handleDelete();
-            return;
-        }
-        test: if (num >=97 && num <= 122 && !comp.over)
-        {
-            if (comp.currLetter >= comp.numLetters || comp.currRow >= comp.numTrys)
-            {
-                break test;
-            }
-            var cellid = cellID(comp.currRow, comp.currLetter++);
             cell = document.getElementById(cellid);
-            cell.textContent = event.key;
-        }
-        if (num === 69)
-        {
-            handleEnter();
-        }
-    });
-}
-
-function checkLetter()
-{
-    var i;
-    var count = 0;
-    for (i = 0; i < 5; i++)
-    {
-        var cellid = cellID(comp.currRow, i)
-        var cell = document.getElementById(cellid);
-        var letter = cell.textContent;
-        var place = comp.word.indexOf(letter);
-        var keyletter = document.getElementById(letter);
-        cell.style.animation = 'fadeIn 3s'
-        if (place != -1)
-        {
-            if (comp.word.charAt(i) === letter)
+            if (cell.bomb)
             {
-                cell.style.background = 'mediumseagreen';
-                keyletter.style.background = 'mediumseagreen';
+                //cell.style.backgroundColor = 'yellow';
                 count++;
             }
             else
             {
-                cell.style.background = 'gold';
-                if (keyletter.style.background != 'mediumseagreen')
-                {
-                    keyletter.style.background = 'gold';
-                }
+                if (!count)
+                    continue;
+                add += count + ' ';
+                count = 0;
             }
+        }
+        if (count)
+            add += count;
+        if (!add && i && j)
+            add = '0';
+        if (reverse)
+        {
+            testRowBlocks(i);
+            zerocell = document.getElementById(cellID(0, i));
+            zerocell.textContent = add
         }
         else
         {
-            cell.style.background = 'lightgrey'
-            keyletter.style.background = 'grey';
+            testColBlocks(i);
+            zerocell = document.getElementById(cellID(i, 0));
+            zerocell.textContent = add
         }
+        count = 0;
     }
-    if (count === comp.numLetters)
-    {
-        document.getElementById('won').style.display="block";
-        document.getElementById('over').style.display="block";
-        comp.over = true;
-    }
-    comp.currLetter = 0;
-    comp.currRow++;
-    if (comp.currRow === comp.numTrys && !comp.over)
-    {
-        comp.over = true;
-        document.getElementById('lost').style.display="block";   
-        document.getElementById('over').style.display="block";
-    }
+
 }
 
-function handleEnter()
+function testRowBlocks(row)
 {
-    if (comp.currLetter < comp.numLetters)
+    var i;
+    for (i = 0; i < components.numCols; i++)
     {
-        return;
-    }
-    var string = '';
-    for (i = 0; i < comp.numLetters; i++)
-    {
-        var cellid = cellID(comp.currRow, i)
-        var cell = document.getElementById(cellid);
-        var letter = cell.textContent;
-        string += letter
-    }
-   checkEnglish('words.txt', string) 
-}
-
-
-function handleDelete()
-{
-    if (!comp.currLetter)
-    {
-        return;
-    }
-    var cellid = cellID(comp.currRow, --comp.currLetter);
-    cell = document.getElementById(cellid);
-    cell.textContent = '';
-    if (comp.currLetter === comp.numLetters - 1)
-    {
-        for (i = 0; i < comp.numLetters; i++)
+        var cellid = cellID(row, i);
+        cell = document.getElementById(cellid);
+        if (cell && cell.bomb)
         {
-            var cellid = cellID(comp.currRow, i);
-            cell = document.getElementById(cellid);
-            cell.style.color = 'black';
+            if (!cell.clicked)
+            {
+                return;
+            }
+        }
+    }
+    zerocell = document.getElementById(cellID(row, 0));
+    zerocell.style.color = 'dimgrey';
+    components.completed++;
+    for (i = 1; i < components.numCols; i++)
+    {
+        var cellid = cellID(row, i);
+        cell = document.getElementById(cellid);
+        if (!cell.bomb)
+        {
+            cell.textContent = 'X';
+            cell.clicked = true;
         }
     }
 }
 
+function testColBlocks(col)
+{
+    var i;
+    for (i = 0; i < components.numRows; i++)
+    {
+        var cellid = cellID(i, col);
+        cell = document.getElementById(cellid);
+        if (cell && cell.bomb)
+        {
+            if (!cell.clicked)
+            {
+                return;
+            }
+        }
+    }
+    zerocell = document.getElementById(cellID(0, col));
+    zerocell.style.color = 'dimgrey';
+    components.completed++;
+    for (i = 1; i < components.numRows; i++)
+    {
+        var cellid = cellID(i, col);
+        cell = document.getElementById(cellid);
+        if (!cell.bomb)
+        {
+            cell.textContent = 'X';
+            cell.clicked = true;
+        }
+    }
+    if (components.completed === (components.numRows + components.numCols))
+    {
+        gameOver();
+    }
+}
 
 
-
-
-// the game is over and all of the cells are dead :)
 function gameOver()
 {
-    comp.over = true;
-    document.getElementById('over').style.display="block";
-    
+    components.alive = false;
+    if (components.lives)
+    {
+        changeColorsToEnd();
+        document.getElementById('won').style.display="block";
+        document.getElementById('overbuttons').style.display="block";
+    }
+    else
+    {
+        document.getElementById('lost').style.display="block";
+        document.getElementById('overbuttons').style.display="block";
+    }
+   
 }
+
+function changeColorsToEnd()
+{
+    var i, j;
+    for (i = 1; i < components.numRows; i++)
+    {
+        for (j = 1; j < components.numCols; j++)
+        {
+            var cellid = cellID(i, j);
+            var cell = document.getElementById(cellid);
+            if (cell.bomb)
+            {
+                cell.style.backgroundColor = 'lightsteelblue';
+                number = (i + j) * 0.3 - 0.6;
+                cell.style.animation = 'fadeIn 1s ' + number + 's';
+            }
+            //if (cell.textContent)
+            {
+              //  cell.textContent = '';
+            }
+            cell.addEventListener("animationend", function()
+                {
+                    this.style.backgroundColor = 'mediumorchid';
+                });
+        }
+    }
+}
+
+function depressButton(button)
+{
+    button.style.boxShadow = 'none';
+    button.style.height = '40px';
+    button.style.width = '140px';
+}
+
+function openButton(button)
+{
+    button.style.boxShadow = '5px 10px rgba(0, 0, 0, 0.4)';
+    button.style.height = '50px';
+    button.style.width = '150px';
+}
+
+
+function handleEvent(td, i, j, event)
+{
+    td.oncontextmenu = function()
+        { 
+            return false; 
+        };
+        if (!components.alive || !i || !j || td.clicked)
+        {
+            return;
+        }
+        if (event.which === 1)
+        {
+            if (td.textContent)
+            {
+                return;
+            }
+            if (td.bomb)
+            {
+                td.style.backgroundColor = 'mediumpurple';
+                td.clicked = true;
+                testRowBlocks(i)
+                testColBlocks(j);
+                return;
+            }
+            td.style.color = 'crimson';
+            components.lives--;
+            td.textContent = 'X';
+            cell.clicked = true;
+            if (!components.lives)
+            {
+                gameOver();
+                return;
+            }
+        }
+        else if (event.which === 3 && !td.clicked)
+        {
+            if (!td.flagged)
+            {
+                td.flagged = true;
+                td.textContent = 'X';
+            }
+            else
+            {
+                td.flagged = false;
+                td.textContent = '';
+            }
+        }
+}
+
+function updateBoard(i, j)
+{
+    testRowBlocks(i);
+    testColBlocks(j);
+}
+
+
+
+
+function newGame()
+{
+    components.alive = true;
+    components.lives = 3;
+    components.completed = 0;
+    document.getElementById('won').style.display="none";
+    document.getElementById('lost').style.display="none";
+    document.getElementById('overbuttons').style.display="none";
+    //clear();
+    table.remove();
+    table = document.getElementById('field').appendChild(createTable());
+    setNumbers();
+}
+
+
 
 // reload the winodw
 function reload()
@@ -272,6 +455,9 @@ function reload()
 // loads the game i guess
 window.addEventListener('load', function()
 {
-    document.getElementById('over').style.display="none";
+    document.getElementById('lost').style.display="none";
+    var all = document.getElementById('field');
+        all.onselectstart = () => { return false; }
     startGame();
 });
+
