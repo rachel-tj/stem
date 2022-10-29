@@ -1,6 +1,6 @@
 body
 {
-    background-color: #D5ACD5;
+    background-color: rgb(174, 200, 204);
     font-family: "cochin";
 }
 
@@ -24,34 +24,33 @@ h3
     margin-inline: 350px;
 }
 
-#box
-{
+#box {
     text-align: center;
 }
 
 #field table
 {
     border-collapse: collapse;
-    font-size: 125%;
-    font-family: "courier new";
-    font-weight: bold;
+    font-size: 250%;
+    font-family: monospace;
+    font-weight: normal;
     display: inline-block;
-    margin-right: 10.5%;
+    animation: none;
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 
 #field table td
 {
-    background-color: lightsteelblue;
-    width: 30px;
-    min-width: 30px;
-    height: 30px;
-    min-height: 30px;
-    border: 1px solid black;    
-}
-
-#field table td:hover
-{
-    background-color: rgb(202, 202, 228);
+    background-color: rgb(0, 0, 0, 0);
+    width: 60px;
+    height:60px;
+    border: 3px solid dimgrey;  
+    border-radius: 4px;
 }
 
 
@@ -66,21 +65,6 @@ button
     font-weight: normal;
     border-radius: 8px;
     box-shadow: 5px 10px rgba(0, 0, 0, 0.4);
-    margin-bottom: 50px;
-    margin-inline: 20px;
-    margin-top: 20px;
-}
-
-#go
-{
-    height: 70px;
-    font-size: 30px;
-    background-color: rgb(188, 169, 230);
-}
-
-#go:hover
-{
-    background-color: rgb(201, 182, 241);
 }
 
 button:hover
@@ -95,15 +79,49 @@ button:active
     width: 140px;
 }
 
-/*#sizebuttons > button:focus, #difficulty> button:focus
+.key
 {
-    box-shadow: none;
-    height: 40px;
-    width: 140px;
-}*/
-
-h4
-{
+    font-family: monospace;
+    font-weight: normal;
     font-size: 25px;
-    margin-bottom: 30px;
+    box-shadow: none;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+    background-color: lightgrey;
+}
+
+.key:active
+{
+    height: 45px;
+    width: 50px;
+}
+
+#lost, #won
+{
+    font-family: cochin;
+    font-size:25px;
+    margin-bottom: 20px;
+}
+
+#del, #enter
+{
+    width: 80px;
+    font-size: 20px;
+}
+
+#new-game-button
+{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    height: 60px;
+    font-size: 25px;
+}
+
+#theWord
+{
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 35px;
+    margin: 10px;
 }
