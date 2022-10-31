@@ -8,23 +8,26 @@
 
 body
 {
-    padding: 0;
     background: pink;
     font-size: large;
-    margin-inline: 50px;
 }
 
 .blog
 {
     background-color: rgba(255, 255, 255, 0.7);
-    margin: 30px;
+    margin-bottom: 30px;
+    margin-inline: 40px;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 a
 {
-    font-size: 30px;
+    font-size: 25px;
     color: black;
     background-color: rgb(255, 255, 255, 0.6);
+    padding-inline: 20px;
+    padding-block: 4px;
     border-radius: 6px;
 }
 
@@ -34,26 +37,28 @@ a:hover
     background-color: rgb(255, 255, 255, 0.9);
 }
 
-a:after
+a:visted
 {
     color: orange;
+    background-color: blue;
 }
 
 h1
 {
     color: black;
     background-color: rgb(255, 255, 255, 0.7);
-    font-size: 85px;
-    height: 120px;
-    margin-top: 40px;
-    margin-inline: 200px;
+    font-size: 50px;
+    padding-block: 10px;
+    padding-inline: 40px;
+    margin-inline: 400px;
+    margin-bottom: 10px;
     border-radius: 8px;
     text-align: center;
 }
 
 h2
 {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -61,4 +66,42 @@ h3
 {
     text-align: center;
     line-height: 50px;
+    margin-bottom: 80px;
 }
+
+#column
+{
+    float: left;
+    margin-bottom: 80px;
+    width: 50%;
+  }
+
+  /* Clear floats after the columns ????*/
+  #row:after
+  {
+    display: table;
+    clear: both;
+  }
+
+  .label
+  {
+    font-size: 30px;
+    margin-inline: 50px;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  #scroll
+  {
+    display: inline;
+    font-size: 20px;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  #scrolling
+  {
+    align-items: center;
+    display: flex;
+    margin-inline: 42%;
+  }
