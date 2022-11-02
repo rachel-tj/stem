@@ -1,7 +1,7 @@
 function scrollFunction(id)
 {
     let e = document.getElementById(id);
-    console.log(id);
+    console.log(e);
     e.scrollIntoView
     ({
       block: 'start',
@@ -10,18 +10,9 @@ function scrollFunction(id)
     });
   }
 
-  function crollFunction(id)
+  function redirect(id)
   {
-    var node = document.getElementById(id);
-    var yourHeight = '100px';
-    // scroll to your element
-    node.scrollIntoView(true);
-    // now account for fixed header
-    var scrolledY = window.scrollY;
-    if(scrolledY)
-    {
-      window.scroll(0, scrolledY - yourHeight);
-    }
+    window.location.href = id + '.html';
   }
     
 

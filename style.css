@@ -3,7 +3,6 @@
 {
     box-sizing: border-box;
     font-family: "cochin";
-    font-weight: normal;
 }
 
 body
@@ -14,6 +13,7 @@ body
 
 .blog
 {
+    
     background-color: rgba(255, 255, 255, 0.7);
     margin-bottom: 30px;
     margin-top: 10px;
@@ -24,6 +24,7 @@ body
 
 a
 {
+    font-weight: normal;
     font-size: 25px;
     color: black;
     background-color: rgb(255, 255, 255, 0.6);
@@ -46,6 +47,8 @@ a:visted
 
 h1
 {
+    font-weight: normal;
+    border: solid thin black;
     color: black;
     background-color: rgb(255, 255, 255, 0.7);
     font-size: 50px;
@@ -56,8 +59,33 @@ h1
     text-align: center;
 }
 
+img
+{
+    height: auto;
+    align-self: center;
+    margin-inline: 20px;
+    float: right;
+    border-radius: 7%;
+}
+
+#img1
+{
+    width: 20%;
+}
+
+#img3
+{
+    width: 23%;
+}
+
+#img4
+{
+    width: 20%;
+}
+
 h2
 {
+    font-weight: normal;
     font-size: 40px;
     text-align: center;
     margin-inline: 100px;
@@ -72,6 +100,7 @@ h3
 
 #column1
 {
+    font-weight: normal;
     width: 50%;
     float: left;
     margin-bottom: 80px;
@@ -79,6 +108,7 @@ h3
 
 #column2
 {
+    font-weight: normal;
     width: 50%;
     float: right;
     margin-bottom: 80px;
