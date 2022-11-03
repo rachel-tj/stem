@@ -153,6 +153,7 @@ h3
 
   #top
   {
+    z-index: 2;
     background-color: pink;
     position: sticky;
     top: 0;

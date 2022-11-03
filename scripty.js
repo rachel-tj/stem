@@ -20,5 +20,10 @@ function scrollFunction(id)
     let e = document.getElementById(id);
     e.style.transform = 'rotate(20deg)';
   }
+
+  function songTrack(link)
+  {
+    window.location.href = link;
+  }
     
 
