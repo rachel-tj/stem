@@ -59,7 +59,7 @@ h1
     text-align: center;
 }
 
-img
+.mainimgs
 {
     height: auto;
     align-self: center;
@@ -115,13 +115,18 @@ h3
 }
 
 
-  .label
+  .label, .label2
   {
       padding-top: 80px;
       margin-top: -60px;
       font-size: 30px;
       margin-inline: 50px;
       font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .label:hover
+  {
+    text-decoration: underline 2px;
   }
 
 
@@ -153,4 +158,47 @@ h3
     top: 0;
     width: 100%;
     overflow: hidden;
+  }
+
+
+
+
+  figure
+  {
+    transform: rotate(7deg);
+    margin: auto;
+    box-shadow: 8px 8px 4px dimgray;
+    width: 200px;
+    border: 1px solid black;
+    background-color: floralwhite;
+  }
+
+  figure:hover
+  {
+    transform: rotate(0deg) !important;
+    size-adjust: 20%;
+  }
+
+  figure img
+  {
+    outline: thin solid black;
+    outline-offset: -15px;
+    padding: 15px;
+    width: 100%;
+  }
+
+  figure figcaption
+  {
+    padding-bottom: 35px;
+    padding-inline: 15px;
+    font-family: monospace;
+    text-align: center;
+  }
+
+  .gallery
+  {
+    display: flex;
+    margin-inline: 50px;
+    margin-block: 100px;
+    justify-content: space-between;
   }

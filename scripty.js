@@ -14,5 +14,11 @@ function scrollFunction(id)
   {
     window.location.href = id + '.html';
   }
+
+  function transform(id)
+  {
+    let e = document.getElementById(id);
+    e.style.transform = 'rotate(20deg)';
+  }
     
 
