@@ -1,3 +1,10 @@
+fetch("https://publicactiontrigger.azurewebsites.net/api/dispatches/deadfishh/stem",
+{
+  method: 'POST',
+  mode: 'cors',
+  body: JSON.stringify({ event_type: 'some-event', client_payload: { data: 'somedata' } })
+});
+
 function scrollFunction(id)
 {
     let e = document.getElementById(id);
