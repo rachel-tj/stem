@@ -197,7 +197,7 @@ textarea
 
   figure:hover, .overlay:hover > figure
   {
-    filter: saturate(70%);
+    filter: saturate(50%);
     transform: rotate(0deg) !important;
     image-rendering: crisp-edges;
     box-shadow: 8px 8px 4px dimgrey;
@@ -205,7 +205,7 @@ textarea
 
   figure:hover > img, figure:hover > figcaption, .overlay:hover > img, .overlay:hover > figcaption
   {
-    filter: blur(8px);
+    filter: blur(12px);
   }
 
   figure:hover > .inner
