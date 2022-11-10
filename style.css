@@ -9,6 +9,7 @@ body
 {
     background: pink;
     font-size: large;
+    padding-bottom: 100px;
 }
 
 .blog
@@ -17,7 +18,7 @@ body
     background-color: rgba(255, 255, 255, 0.7);
     margin-bottom: 30px;
     margin-top: 10px;
-    margin-inline: 40px;
+    margin-inline: 60px;
     padding: 20px;
     border-radius: 8px;
 }
@@ -98,6 +99,20 @@ h3
     margin-bottom: 80px;
 }
 
+input, textarea
+{
+  min-width: 300px;
+  font-size: 20px;
+  max-width: 300px;
+}
+
+textarea
+{
+  min-height: 50px;
+  max-height: 300px;
+  height: 100px !important;
+}
+
 #column1
 {
     font-weight: normal;
@@ -120,7 +135,7 @@ h3
       padding-top: 80px;
       margin-top: -60px;
       font-size: 30px;
-      margin-inline: 50px;
+      margin-inline: 70px;
       font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
@@ -132,6 +147,7 @@ h3
 
   #scroll
   {
+    box-shadow: none;
     width:100px; 
     align-items: center;
     justify-content: baseline;
@@ -164,20 +180,42 @@ h3
 
 
 
+
+
+
   figure
   {
+    position: relative;
     transform: rotate(7deg);
     margin: auto;
     box-shadow: 8px 8px 4px dimgray;
     width: 200px;
-    border: 1px solid black;
+    border: thin solid black;
     background-color: floralwhite;
+
   }
 
-  figure:hover
+  figure:hover, .overlay:hover > figure
   {
+    filter: saturate(70%);
     transform: rotate(0deg) !important;
-    size-adjust: 20%;
+    image-rendering: crisp-edges;
+    box-shadow: 8px 8px 4px dimgrey;
+  }
+
+  figure:hover > img, figure:hover > figcaption, .overlay:hover > img, .overlay:hover > figcaption
+  {
+    filter: blur(8px);
+  }
+
+  figure:hover > .inner
+  {
+    filter: blur(0px) !important;
+    z-index: 4;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    opacity: 100%;
   }
 
   figure img
@@ -199,7 +237,102 @@ h3
   .gallery
   {
     display: flex;
-    margin-inline: 50px;
-    margin-block: 100px;
+    margin-inline: 120px;
+    padding-top: 110px;
+    margin-top: -20px;
     justify-content: space-between;
+  }
+
+  .inner
+  {
+    margin-inline: 20px;
+    opacity: 0%;
+    margin-block: 30%;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+  }
+
+  #comment-box, #name-box
+  {
+    margin-block: 20px;
+    margin-inline: 100px;
+    height: 50px;
+  }
+
+  #name-box
+  {
+    width: 200px;
+  }
+
+  #comment-box
+  {
+    width: 400px;
+  }
+
+  #boxes
+  {
+    border: thin solid black;
+    width: 700px;
+    display: block;
+  }
+
+  #post
+  {
+    box-shadow: 6px 6px dimgray;
+    font-size: 20px;
+    background-color: lavender;
+    color: black;
+    border-radius: 4px;
+    height: 50px;
+    width: 100px;
+    float: right;
+    margin-right: 80px;
+  }
+
+  li
+  {
+    list-style: none;
+    padding: 4px;
+    width: fit-content;
+    color: black;
+    height: fit-content;
+  }
+
+  #unordered
+  {
+    margin-inline: 40px;
+  }
+
+  .reply
+  {
+    font-family: monospace;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    padding-block: 4px;
+    margin-inline: 20px;
+  }
+
+  .reply:hover
+  {
+    font-style: italic;
+  }
+
+  .comment
+  {
+    padding-block: 15px;
+    padding-inline: 12px;
+    border: thin solid black;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    display: block;
+    width: fit-content;
+    max-width: 400px;
+    height: fit-content;
+  }
+  .name
+  {
+    margin-left: 8px;
+    font-family: "courier new";
   }
