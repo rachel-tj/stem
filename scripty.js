@@ -32,6 +32,12 @@ function scrollFunction(id)
     window.location.href = id + '.html';
   }
 
+  function newTab(place)
+  {
+    window.open(
+    "https://deadfishh.github.io./stem/" + place);
+}
+
   function transform(id)
   {
     let e = document.getElementById(id);
@@ -235,4 +241,12 @@ function findCommentNum(rep)
   var id = rep.id;
   var num = id.substring(id.length - 1);
   return num;
+}
+
+
+function changeKeyFrame()
+{
+  var feature = document.getElementsByClassName('feature');
+  var ob = feature[5];
+  ob.style.animation = 'slide 10s';
 }

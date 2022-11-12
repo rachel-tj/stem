@@ -9,7 +9,7 @@ body
 {
     background: thistle;
     font-size: large;
-    padding-bottom: 100px;
+    padding-bottom: 100px;;
 }
 
 .blog
@@ -169,12 +169,91 @@ textarea
 
   #top
   {
-    z-index: 2;
+    z-index: 3;
     background-color: thistle;
     position: sticky;
     top: 0;
     width: 100%;
     overflow: hidden;
+  }
+
+  #slideshow
+  {
+    height: 250px;
+    align-items: center;
+    position: relative;
+    border: thin solid black;
+    margin: 50px 100px;
+    display: flex;
+    padding-inline: 20px;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .feature
+  {
+    display: block;
+    height: 200px;
+    width: 280px;
+    background-color: rgb(255, 255, 255, 0.6);
+    font-size: 20px;
+    position: relative;
+    margin-inline: 50px;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    animation: slide 20s infinite;
+  }
+
+  .ftimg
+  {
+    height: auto;
+    width: 100px;
+  }
+
+  .cap
+  {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    padding-top: 10px;
+  }
+
+  .cap:hover
+  {
+    text-decoration: underline;
+  }
+  
+  
+#wrap
+  {
+    align-self: center;
+    position: relative;
+    left: -127%;
+    display: flex;
+  }
+
+  @keyframes slide
+  {
+    0%
+    {
+      transform: translate(0%)
+    }
+    10%, 25%
+    {
+      transform: translate(136%)
+    }
+    40%, 50%
+    {
+      transform: translate(272%);
+    }
+    65%, 75%
+    {
+      transform: translate(408%);
+    }
+    90%, 100%
+    {
+      transform: translate(544%);
+    }
   }
 
 
