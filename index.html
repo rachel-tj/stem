@@ -27,15 +27,15 @@
             </div>
         </div>
         <div id="slideshow">
-                <div id="wrap">
+            <div id="wrap">
 
-                    <div class="feature" onclick="redirect('films')">
-                        <img class="ftimg" src="pics/hunting.jpg">
-                        <div class="cap">
-                            good will hunting: good or will hunting? click to find out!
-                        </div>
+                <div class="feature" onclick="redirect('films')">
+                    <img class="ftimg" src="pics/hunting.jpg">
+                    <div class="cap">
+                        good will hunting: good or will hunting? click to find out!
                     </div>
-
+                    </div>
+                    
                     <div class="feature" onclick="redirect('music')">
                         <img class="ftimg" src="pics/phoebe.jpg">
                         <div class="cap">
@@ -43,13 +43,15 @@
                         </div>
                     </div>
 
+                    
                     <div class="feature" onclick="newTab('wordle')">
                         <img class="ftimg" src="pics/armageddon.jpg">
                         <div class="cap">
                             rachle: like New York Times Wordle, but with inifinte plays
                         </div>
                     </div>
-
+                    
+                    
                     <div class="feature" onclick="redirect('films')">
                         <img class="ftimg" src="pics/trumpet.jpg">
                         <div class="cap">
@@ -57,28 +59,39 @@
                         </div>
                     </div>
 
-            <div class="feature" onclick="redirect('films')">
-                <img class="ftimg" src="pics/hunting.jpg">
-                <div class="cap">
-                    good will hunting: good or will hunting? click to find out!
-                </div>
-            </div>
+                    <div class="feature" onclick="redirect('recipes')">
+                        <img class="ftimg" src="pics/ryan.jpg">
+                        <div class="cap">
+                            i made a pecan pie and it turned out adequate: recipes from a culinary genius
+                        </div>
+                    </div>
 
-            <div class="feature" onclick="redirect('music')">
-                <img class="ftimg" src="pics/phoebe.jpg">
-                <div class="cap">
-                    find out what music i like and why i like it
+                    <div class="feature" onclick="redirect('films')">
+                        <img class="ftimg" src="pics/hunting.jpg">
+                        <div class="cap">
+                            good will hunting: good or will hunting? click to find out!
+                        </div>
+                    </div>
+                    
+                    <div class="feature" onclick="redirect('music')">
+                        <img class="ftimg" src="pics/phoebe.jpg">
+                        <div class="cap">
+                            find out what music i like and why i like it
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <img class="ftimg" src="pics/armageddon.jpg">
+                        <div class="cap">
+                            rachle: like New York Times Wordle, but with inifinte plays
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="feature">
-                <img class="ftimg" src="pics/armageddon.jpg">
-                <div class="cap">
-                    rachle: like New York Times Wordle, but with inifinte plays
-                </div>
+            <div id="directionButtons">
+                <a class="direction" onclick = "forwards()"><</a>
+                <a class="direction" onclick = "backwards()">></a>
             </div>
-        </div>
-        </div>
         <div onclick="redirect('about')" class="label" id="intro">
             about me
         </div>
@@ -90,7 +103,7 @@
             <br><br>
             "they carried the land itself— vietnam, the place, the soil— a powdery orange-red dust that covered their boots and fatigues and faces. they carried the sky. the whole atmosphere, they carried it, the  humidity, the monsoons, the stink of fungus and decay, all of it, they carried gravity."
         </div>
-        <div class="label2" id="recipes">
+        <div onclick="redirect('recipes')" class="label" id="recipes">
             recipes
         </div>
         <div class="blog">

@@ -8,6 +8,8 @@ var comp =
   max : 4,
   num : 0,
   recent: 0,
+  current : 0,
+  back : 105,
 }
 
 function start()
@@ -244,9 +246,24 @@ function findCommentNum(rep)
 }
 
 
-function changeKeyFrame()
+function forwards()
 {
   var feature = document.getElementsByClassName('feature');
-  var ob = feature[5];
-  ob.style.animation = 'slide 10s';
+  for (var i = 0; i < feature.length; i++)
+  {
+      var delay = ' -' + comp.current + 's ';
+      feature[i].style.animation = 'slide 30s' + delay + 'infinite';
+  }
+  comp.current += 5;
+}
+
+function backwards()
+{
+  var feature = document.getElementsByClassName('feature');
+  for (var i = 0; i < feature.length; i++)
+  {
+      var delay = ' -' + comp.back + 's ';
+      feature[i].style.animation = 'slide 30s' + delay + 'infinite';
+  }
+comp.back -= 5;
 }
