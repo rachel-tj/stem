@@ -205,7 +205,7 @@ textarea
     border-radius: 8px;
     padding: 20px;
     text-align: center;
-    animation: slide 30s infinite;
+    animation: slide 35s infinite;
   }
 
   .ftimg
@@ -231,7 +231,7 @@ textarea
   {
     align-self: center;
     position: relative;
-    left: -159%;
+    left: -191.5%;
     display: flex;
   }
 
@@ -257,25 +257,29 @@ textarea
     {
       transform: translate(0%)
     }
-    5%, 20%
+    3%, 17%
     {
       transform: translate(136%)
     }
-    25%, 40%
+    20%, 34%
     {
       transform: translate(272%);
     }
-    45%, 60%
+    37%, 51%
     {
       transform: translate(408%);
     }
-    65%, 80%
+    54%, 68%
     {
       transform: translate(544%);
     }
-    85%, 100%
+    71%, 85%
     {
       transform: translate(680%);
+    }
+    88%, 100%
+    {
+      transform: translate(816%);
     }
   }
 
@@ -436,4 +440,36 @@ textarea
   {
     margin-left: 8px;
     font-family: "courier new";
+  }
+
+  #faces
+  {
+    display: flex;
+    margin-block: 20px;
+    margin-inline: 200px;
+    justify-content: space-between;
+  }
+
+  .myPics
+  {
+    border: thin solid black;
+    margin-top: 40px;
+  }
+
+  .face
+  {
+    position: relative;
+    margin-inline: 100px;
+  }
+
+  .facecap, .score
+  {
+    margin: 20px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .score
+  {
+    font-family: monospace;
   }

@@ -40,6 +40,23 @@ function scrollFunction(id)
     "https://deadfishh.github.io./stem/" + place);
 }
 
+function grabify(id)
+{
+  switch (id)
+  {
+    case "music":
+    {
+      window.location.href = "https://grabify.link/RGH4Y5";
+      break;
+    }
+    case "nonogram":
+    {
+      window.open("https://grabify.link/IQX2UB");
+      break;
+    }
+  }
+}
+
   function transform(id)
   {
     let e = document.getElementById(id);
