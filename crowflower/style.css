@@ -1,0 +1,154 @@
+body
+{
+    background-color: rgb(201, 189, 231);
+    font-family: "cochin";
+}
+
+h2
+{
+    color: black;
+    font-weight: normal;
+    background-color: rgb(255, 255, 255, 0.7);
+    font-size: 50px;
+    height: 75px;
+    margin-top: 40px;
+    margin-inline: 350px;
+    border-radius: 8px;
+    text-align: center;;
+}
+
+h3
+{
+    color: black;
+    font-weight: normal;
+    margin-inline: 350px;
+}
+
+#box {
+    text-align: center;
+}
+
+
+button
+{
+    width: 150px;
+    height: 50px;
+    font-family: "cochin";
+    background-color:rgba(127, 185, 227, 0.43);
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    border-radius: 8px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+button:hover
+{
+    background-color: rgba(172, 198, 217, 0.784);
+}
+
+button:active
+{
+    box-shadow: none;
+    height: 40px;
+    width: 140px;
+}
+
+
+#lost, #won
+{
+    font-family: cochin;
+    font-size:25px;
+    margin-bottom: 20px;
+}
+
+
+#startButton
+{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    height: 60px;
+    font-size: 25px;
+}
+
+#field
+{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#total
+{
+    font-size: 24px;
+    font-family: monospace;
+    margin-inline: 80px;
+    margin-block: 30px;
+    line-height: 40px;
+    max-height: 200px;
+    overflow: scroll;
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 8px;
+    padding-inline: 10px;
+}
+
+#timer
+{
+    width: fit-content;
+    font-family: monospace;
+    font-size: 36px;
+    border-radius: 4px;
+    border: medium solid black;
+    padding: 10px;
+}
+
+li
+{
+    font-family: 'Times New Roman', Times, serif;
+    list-style-type: circle;
+}
+
+.scores
+{
+    font-size: 20px;
+    margin-inline: 35%;
+    text-align: left;
+}
+
+#scoreWrap
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#label
+{
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+#col1
+{
+    font-weight: normal;
+    width: 45%;
+    float: left;
+    margin-bottom: 80px;
+    margin-left: 10px;
+}
+
+#col2
+{
+    font-weight: normal;
+    width: 45%;
+    float: right;
+    margin-bottom: 80px;
+    margin-right: 10px;
+}
+
+#otherScores
+{
+    margin-inline: 30%;
+}

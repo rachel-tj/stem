@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typing test</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="w.png">
+    <script src="script.js"></script>
+</head>
+<body>
+    <body onload = "start()">
+        <div id="box">
+           <h2>typing test</h2><hr><br><br>
+           <h3>find out you're typing speed!!!! and please email me with you're high scores so i can change the html and whatnot to put them on here for others to view (as opposed to you just viewing it on you're browser)</h3>
+           <br>
+           <div id="field">
+               <div id="timer">
+                   0:60
+                </div>
+            </div>
+            <button id="startButton" onclick="beginTyping()">start</button>
+              <div id="total">
+                  <div id="text">
+                </div>
+            </div>
+                <div id="scoreWrap" style="display: none;">
+                    <div id="col1">
+                        <div id="label">
+                            personal scores
+                        </div>
+                        <div class = "scores" id="localScores">
+                        </div>
+                    </div>
+                    <div id="col2">
+                        <div id="label">
+                            other scores
+                        </div>
+                        <div class = "scores" id="otherScores">
+                            <li>jerry seinfeld: 52wpm</li>
+                            <li>diane nguyen: 124wpm</li>
+                            <li>william hunting: 169wpm</li>
+                        </div>
+                    </div>
+                </div>
+            <div id="over" style="display: none;">
+              <button id="new-game-button" type="button" onclick="reload()">restart</button>
+            </div>        
+        </div>
+  </body>
+</body>
+</html>
