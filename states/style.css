@@ -73,10 +73,16 @@ input
 
 #startButton
 {
+    font-size: 20px;
     padding: 10px;
     border-radius: 4px;
     background-color: thistle;
     margin-inline: 45%;
-    box-shadow: 4px 4px 8px;
+    box-shadow: 4px 4px 2px;
     border: thin solid black;
+}
+
+#startButton:hover
+{
+    background-color: rgba(255, 255, 255, 0.4);
 }
