@@ -61,7 +61,8 @@ input
     height: 40px;
     width: 300px;
     margin-inline: 39%;
-    margin-block: 20px;
+    margin-top: 30px;
+    margin-bottom: 80px;
 }
 
 #count
