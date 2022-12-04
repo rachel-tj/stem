@@ -9,3 +9,8 @@ holden time!
 “the thing is, it's really hard to be roommates with people if your suitcases are much better than theirs--if yours are really good ones and theirs aren't. you think if they're intelligent and all, the other person, and have a good sense of humor, that they don't give a damn whose suitcases are better, but they do. they really do.”
 
 this one is a miss tbh.  i think it doesn't matter what kind of suitcase someone has.  
+
+
+
+update:
+i have changed everything and no longer am using anything andy told me to do.  but his name is still mentioned because otherwise i would not have even attempted to make a guess the states game.
