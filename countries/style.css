@@ -1,0 +1,89 @@
+body
+{
+    background-color: rgb(243, 180, 195);
+    font-family: "cochin";
+}
+
+h2
+{
+    color: black;
+    font-weight: normal;
+    background-color: rgb(255, 255, 255, 0.7);
+    font-size: 50px;
+    height: 75px;
+    margin-top: 40px;
+    margin-inline: 350px;
+    border-radius: 8px;
+    text-align: center;;
+}
+
+h3
+{
+    color: black;
+    font-weight: normal;
+    margin-inline: 350px;
+}
+
+#box {
+    text-align: center;
+}
+
+
+
+#total
+{
+    font-size: 24px;
+    font-family: monospace;
+    margin-inline: 80px;
+    margin-block: 30px;
+    line-height: 40px;
+    max-height: 200px;
+    overflow: scroll;
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 8px;
+    padding-inline: 10px;
+}
+
+#timer
+{
+    width: fit-content;
+    font-family: monospace;
+    font-size: 36px;
+    border-radius: 4px;
+    border: medium solid black;
+    padding: 10px;
+}
+
+input
+{
+    font-size: 20px;
+    font-family: monospace;
+    height: 40px;
+    width: 300px;
+    margin-inline: 39%;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+#count
+{
+    font-size: 24px;
+    font-family: monospace;
+}
+
+#startButton
+{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: thistle;
+    margin-inline: 45%;
+    box-shadow: 4px 4px 2px;
+    border: thin solid black;
+    margin-block: 30px;
+}
+
+#startButton:hover
+{
+    background-color: rgba(255, 255, 255, 0.4);
+}
