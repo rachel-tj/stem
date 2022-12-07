@@ -22,9 +22,10 @@ var count = 0;
 
      start.addEventListener('mouseup', function()
      {
-        start.style.display = 'none';
-        document.getElementById('count').style.display = 'block';
-        document.getElementById('wrapper').style.display = 'flex';
+       start.style.display = 'none';
+       document.getElementById('count').style.display = 'block';
+       document.getElementById('wrapper').style.display = 'flex';
+       makeTimer();
     });
 }
 
@@ -136,10 +137,39 @@ var count = 0;
       input.placeholder = "you loose the game"
       input.readOnly = true;
 
+      var timer = document.getElementById('timer');
+      timer.textContent = "0:00";
+
       finish('north_america');
       finish('south_america');
       finish('europe');
       finish('asia');
       finish('africa');
       finish('oceania');
+    }
+
+    function makeTimer()
+    {
+        var timeleft = 9;
+        timer = document.getElementById('timer');
+        var downloadTimer = setInterval(function()
+        {
+            if(timeleft <= 0)
+            {
+              clearInterval(downloadTimer);
+              giveUp();
+              timer.innerHTML = '0:00';
+              timer.style.color = 'crimson';
+              document.getElementById('input').value = "";
+            }
+            else if ((timeleft % 60) < 10)
+            {
+              timer.innerHTML = Math.floor(timeleft / 60) + ':0' + (timeleft % 60);
+            }
+            else
+            {
+                timer.innerHTML = Math.floor(timeleft / 60) + ':' + (timeleft % 60);
+            }
+            timeleft--;
+        }, 1000);
     }
