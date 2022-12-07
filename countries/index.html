@@ -13,12 +13,49 @@
     <body onload = "start()">
         <div id="box">
            <h2>name the countries</h2><hr><br><br>
-           <h3>name as many countries as you can.  i will make this look a lot nicer don't worry. i also need to update it so that it fits my personal view of the world. and maybe make it a little smaller!</h3>
+           <h3>name as many countries as you can.  for a scalable vector graphic, this sure isn't very scalable!  hopefully i will figure out how to condense it, but that might mean downloading a whole new file and like 70% of the work on this was just editing the svg file so i think we can all just deal with the large map here.</h3>
            <br>
            <div id="startButton">start</div>
            <div id="count" style="display:none;">0/196 countries</div>
-           <input style="display:none;" id="input" type="text" placeholder="enter a country">
+           <div id="wrapper" style="display:none;">
+               <input id="input" type="text" placeholder="enter a country">
+               <div id="giveup" onclick="giveUp()">give up</div>
+           </div>
            <object id="svgClass" type="image/svg+xml" data="world.svg";></object>
+        </div>
+        <div id="answers">
+            <div class="continent" id="north_america">
+                <div class="contLabel">
+                    north america
+                </div>
+            </div>
+            <div id="stack">
+            <div class="continent" id="south_america">
+                <div class="contLabel">
+                    south america
+                </div>
+            </div>
+            <div class="continent" id="oceania">
+                <div class="contLabel">
+                    oceania
+                </div>
+            </div>
+        </div>
+            <div class="continent" id="africa">
+                <div class="contLabel">
+                    africa
+                </div>
+            </div>
+            <div class="continent" id="europe">
+                <div class="contLabel">
+                    europe
+                </div>
+            </div>
+            <div class="continent" id="asia">
+                <div class="contLabel">
+                    asia
+                </div>
+            </div>
         </div>
   </body>
 </body>

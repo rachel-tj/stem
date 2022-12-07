@@ -12,7 +12,7 @@ h2
     font-size: 50px;
     height: 75px;
     margin-top: 40px;
-    margin-inline: 350px;
+    margin-inline: 25%;
     border-radius: 8px;
     text-align: center;;
 }
@@ -21,7 +21,7 @@ h3
 {
     color: black;
     font-weight: normal;
-    margin-inline: 350px;
+    margin-inline: 25%;
 }
 
 #box {
@@ -35,7 +35,6 @@ h3
     font-size: 24px;
     font-family: monospace;
     margin-inline: 80px;
-    margin-block: 30px;
     line-height: 40px;
     max-height: 200px;
     overflow: scroll;
@@ -60,9 +59,6 @@ input
     font-family: monospace;
     height: 40px;
     width: 300px;
-    margin-inline: 39%;
-    margin-top: 30px;
-    margin-bottom: 80px;
 }
 
 #count
@@ -80,10 +76,74 @@ input
     margin-inline: 45%;
     box-shadow: 4px 4px 2px;
     border: thin solid black;
-    margin-block: 30px;
+    margin-block: 20px;
 }
 
 #startButton:hover
 {
     background-color: rgba(255, 255, 255, 0.4);
+}
+
+#answers
+{
+    display: flex;
+    width: 70%;
+    margin-inline: 10%;
+    margin-block: 40px;
+}
+
+.continent
+{
+    font-family: 'Times New Roman', Times, serif;
+    border: thin solid black;
+    background-color: rgb(255, 255, 255, 0.7);
+    text-align: center;
+    margin: 20px;
+    height: fit-content;
+}
+
+#svgClass
+{
+    background-size: 100px, 500px;
+}
+
+li
+{
+    list-style: none;
+    padding-block: 5px;
+    padding-inline: 20px;
+    border: thin solid black;
+    color: green;
+}
+
+.contLabel
+{
+    width: 150px;
+    background-color: palevioletred;
+    color: white;
+    text-shadow: 2px 2px black;
+    padding-block: 2px;
+    font-size: 26px;
+    border: thin solid black;
+    padding-inline: 10px;
+}
+
+#wrapper
+{
+    justify-content: center;
+    margin-block: 40px;
+}
+
+#giveup
+{
+    font-family: 'Times New Roman', Times, serif;
+    margin-block: auto;
+    height: fit-content;
+    margin-inline: 20px;
+    font-size: 20px;
+}
+
+#giveup:hover
+{
+    text-decoration: underline;
 }
