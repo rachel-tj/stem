@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg915"
+   width="402"
+   height="774"
+   viewBox="0 0 402 774"
+   sodipodi:docname="manhattan.svg"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)">
+  <style
+     id="style893" />
+  <metadata
+     id="metadata921">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs919" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="900"
+     id="namedview917"
+     showgrid="false"
+     inkscape:zoom="2.4261487"
+     inkscape:cx="182.80332"
+     inkscape:cy="219.80968"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g923"
+     inkscape:document-rotation="0"
+     inkscape:snap-global="true"
+     inkscape:snap-bbox="true" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g923">
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 269.87632,581.49191 0.19829,47.98715 44.21956,0.79318 c -3.03688,-10.32386 -13.89603,-26.17511 -16.85499,-48.18544 z"
+       class="alphabet_city"
+       name="places"
+       sodipodi:nodetypes="ccccc"
+       id="path162" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 263.33262,461.32576 -4.95735,24.39016 -11.50105,0.19829 -0.39659,-24.39016 16.85499,-0.19829"
+       name="places"
+       class="beekman"
+       id="path154" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 238.34758,629.28077 -18.44135,-0.99147 c -0.17208,22.06585 -0.48921,45.65479 1.38806,46.2025 l 25.38163,11.69934 z"
+       class="bowery"
+       name="places"
+       sodipodi:nodetypes="ccccc"
+       id="path168" />
+    <path
+       class="central_park"
+       name="places"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.13386;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 190.23509,275.02385 c -14.25774,0.005 -28.96822,-0.12055 -43.22518,0.22479 -0.71919,53.44255 -0.98618,106.89957 -0.24327,160.34307 14.95645,-0.59811 28.98508,0.83222 43.93469,-0.002 -0.0728,-15.36167 0.5709,-27.69119 -0.31801,-42.84937"
+       sodipodi:nodetypes="ccccc"
+       id="path120" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 132.66905,521.93125 -0.40861,26.32955 35.93605,0.58911 0.29456,32.99048 c -22.43436,1.35807 -41.78797,-1.16707 -64.80272,-0.88367 L 96.08685,558.27589 C 85.169157,554.18351 86.123637,534.73856 83.734422,521.93125 Z"
+       class="chelsea"
+       name="places"
+       sodipodi:nodetypes="cccccccc"
+       id="path216" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 221.29429,687.5792 c -0.38961,-10.85965 0.7118,-11.77913 -1.18976,-32.71851 l -30.33898,-0.39659 v 33.31339 z"
+       class="chinatown"
+       name="places"
+       sodipodi:nodetypes="ccccc"
+       id="path172" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 221.69088,709.39154 -0.39659,-21.81234 -31.52874,0.19829 3.76758,21.21746 z"
+       class="civic_center"
+       name="places"
+       sodipodi:nodetypes="ccccc"
+       id="path174" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 132.64305,435.53319 -46.06492,0.36967 0.719493,49.92129 45.846487,-0.59873 z"
+       name="places"
+       class="clinton"
+       id="path212" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 259.61741,320.16202 c 8.11531,-22.67304 6.6873,-21.7662 6.03631,-38.65408 -0.34536,-8.95919 -2.34041,-37.59453 -3.90328,-49.60932 -3.90219,-12.82741 -20.08393,-31.84251 -29.95456,-38.22562 -10.54956,-6.82216 -15.801,-6.35952 -23.10596,-10.48312 -5.30065,-2.99218 -13.24376,-9.96038 -17.52367,-16.32563 v 0 l -0.37277,153.26821 z"
+       name="places"
+       class="east_harlem"
+       sodipodi:nodetypes="cscsscccc"
+       id="path22" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 269.87632,581.49191 -54.72914,0.59489 c 4.70999,14.88023 3.17735,30.80089 4.75905,46.2025 23.61525,1.76953 34.024,0.90839 50.16838,1.18976 z"
+       class="east_villiage"
+       name="places"
+       sodipodi:nodetypes="ccccc"
+       id="path166" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.13386;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 80.010185,90.012193 c -1.108207,-15.84725 -0.228223,-42.471872 1.150973,-43.16147 l 52.944752,11.221983 c 0.91416,15.160417 1.25284,21.745147 2.167,32.144787"
+       class="fort_george"
+       name="places"
+       sodipodi:nodetypes="cccc"
+       id="path122" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 168.19649,548.84991 c 0.0982,-16.6916 1.27,-32.84641 0.29456,-50.07483 h -35.05238 l -1.17823,49.48572 z"
+       class="garment_district"
+       name="places"
+       sodipodi:nodetypes="ccccc"
+       id="path208" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 246.27934,581.88851 -31.13216,0.19829 0.39659,-29.9424 30.93386,0.99147 z"
+       name="places"
+       class="gramercy_park"
+       id="path180" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 216.73353,589.22538 -1.58635,-7.13858 c -19.42241,0.0547 -43.47199,-0.83887 -58.10014,0.19829 l -0.39659,46.99568 12.88911,-2.97441 32.12363,0.99147 -0.59488,-30.33898 z"
+       class="greenwich_villiage"
+       name="places"
+       sodipodi:nodetypes="cccccccc"
+       id="path188" />
+    <path
+       class="hamilton_heights"
+       name="places"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.13386;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 88.354737,151.30148 c 29.244603,-0.67101 58.503363,0.34679 87.744033,-0.57548 -5.17839,-5.47606 -13.40192,-14.25343 -20.82072,-21.88546 -60.578169,-4.50644 -49.17534,-6.56896 -65.613285,-5.39259 -1.991402,6.01672 -1.501631,21.35498 -1.310028,27.85357 z"
+       sodipodi:nodetypes="cccccc"
+       id="path124" />
+    <g
+       class="g904"
+       style="fill:#916f6f;stroke-width:1.13386;stroke-miterlimit:4;stroke-dasharray:none"
+       transform="translate(0.59307553,-30.839927)"
+       id="g142">
+      <g
+         class="g913"
+         style="stroke-width:1.13386;stroke-miterlimit:4;stroke-dasharray:none"
+         id="g140">
+        <g
+           class="g917"
+           style="stroke-width:1.13386;stroke-miterlimit:4;stroke-dasharray:none"
+           id="g138">
+          <g
+             id="g924"
+             style="stroke-width:1.13386;stroke-miterlimit:4;stroke-dasharray:none">
+            <path
+               class="harlem"
+               name="places"
+               style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.13386;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m 175.50569,181.56593 c 5.23729,5.14366 10.86774,10.09946 15.06748,16.13825 1.16879,4.72501 0.51861,11.10667 0.7677,16.46327 -0.12215,30.61893 -0.37137,61.25868 -1.64403,91.8505 -13.77231,-0.76317 -29.33718,-0.24774 -43.28001,0.0706 -0.2258,-15.93761 0.35044,-33.90247 -0.34938,-49.32722 -14.47894,2.19601 -24.7054,-1.51183 -31.72268,-5.11641 -8.47397,-4.35284 -17.706635,-6.5357 -26.592073,-9.76279 1.758249,-10.40338 0.541128,-18.51621 -1.383245,-24.06801 -1.933985,-5.57952 -7.102172,-3.72715 -6.16187,-5.50999 0.88621,-5.33228 -0.45207,-13.22794 0.186911,-18.60728 3.070216,-0.72669 5.815177,-2.4632 7.083162,-4.85658 1.495963,-2.8237 -0.735428,-6.31043 0.284006,-6.69882 28.571859,-0.18741 59.172169,-0.38813 87.744029,-0.57554 z"
+               sodipodi:nodetypes="ccccccscsccsccc"
+               id="path134" />
+            <path
+               style="fill:none;stroke:#000000;stroke-width:1.13386;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m 175.50569,181.56593 -87.744029,0.57548"
+               id="path897"
+               sodipodi:nodetypes="cc" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 133.14411,485.22542 -0.47506,36.70583 H 83.734422 c -0.917415,-14.99384 -2.274868,-34.92787 3.563201,-36.1071 z"
+       class="hell's_kitchen"
+       name="places"
+       sodipodi:nodetypes="ccccc"
+       id="path214" />
+    <path
+       class="inwood"
+       name="places"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.13386;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 81.161158,46.850723 C 77.852611,30.389995 85.457683,18.858596 92.43254,19.750261 c 3.17893,-1.063666 13.28829,1.699176 16.72192,2.357718 4.21266,0.303557 7.52307,-2.617809 10.68399,-4.943656 7.59638,-4.645014 14.64275,-1.911543 15.82075,6.327251 1.07167,10.796692 -2.20473,23.786979 -1.55329,34.581132 0.0468,0.747484 -53.275752,-11.104608 -52.944752,-11.221983"
+       sodipodi:nodetypes="ccccccc"
+       id="path126" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 215.54377,552.1444 v -30.53727 l 31.33044,0.99146 -0.39658,30.53728 z"
+       name="places"
+       class="kips_bay"
+       id="path182" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 219.90623,628.2893 -18.24304,-0.99147 -0.79317,27.36456 19.23451,0.1983 z"
+       class="little_italy"
+       name="places"
+       sodipodi:nodetypes="ccccc"
+       id="path170" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 190.38332,392.74008 78.26308,0.72462 c 0.28536,14.84348 0.28354,28.82544 0.0402,42.08284 l -77.98523,0.0422 z"
+       class="lennox_hill"
+       name="places"
+       sodipodi:nodetypes="ccccc"
+       id="path150" />
+    <path
+       class="lincoln_square"
+       name="places"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 146.2426,393.19348 c 0.68832,13.93408 0.58642,28.89531 0.49315,42.15576 -26.56615,-0.008 -40.34284,1.02213 -60.15762,0.55362 0.248433,-14.05188 -0.962543,-29.11479 -0.195894,-42.85566 26.859024,-0.84143 34.950494,0.68343 59.860374,0.14628 z"
+       sodipodi:nodetypes="cccccc"
+       id="path148" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 246.67592,686.19114 19.03623,9.51811 43.22808,-29.94239 c 4.85643,-3.58078 13.82862,-16.55762 5.35394,-35.49462 l -75.94659,-0.99147 z"
+       class="lower_east_side"
+       name="places"
+       sodipodi:nodetypes="cccccc"
+       id="path164" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 122.83459,581.25128 -19.14626,-0.29456 11.19319,28.27755 9.42586,-12.37143 z"
+       name="places"
+       class="meatpacking_district"
+       id="path202" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 255.00427,522.40031 c 3.5291,14.35464 9.53177,21.90696 15.07034,30.73556 h -23.59698 l 0.39658,-30.53728 8.13006,-0.19828"
+       class="medical_city"
+       name="places"
+       sodipodi:nodetypes="ccccc"
+       id="path158" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 214.15571,435.34924 1.38806,86.25789 -46.75816,-0.74021 c -0.9205,-23.23324 -0.39275,-47.91475 -0.58912,-71.87212 l -20.06032,0.27936 -0.19131,36.05451 -14.80075,-0.10325 -0.50106,-49.69223 z"
+       class="midtown"
+       name="places"
+       sodipodi:nodetypes="ccccccccc"
+       id="path204" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 168.78561,520.86692 c -0.8995,19.52318 -0.31278,40.53258 -0.29456,60.97347 l 46.65613,0.24641 0.39659,-60.47967 z"
+       class="midtown_south"
+       name="places"
+       sodipodi:nodetypes="ccccc"
+       id="path210" />
+    <path
+       class="morningside_heights"
+       name="places"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 88.345773,211.0422 c -6.993758,9.27092 -6.09029,23.40245 -5.505071,35.08537 2.276105,11.13003 4.507026,18.19617 3.719147,28.89401 18.876701,1.81074 42.486891,-0.71819 60.450061,0.22704 0.002,-1.88981 -0.19773,-49.68808 -0.34938,-49.32722 -14.70048,1.47488 -17.32672,0.26334 -28.65296,-3.62008 -3.44218,-1.18021 -15.5702,-6.91517 -29.661795,-11.25912 z"
+       sodipodi:nodetypes="cccccscc"
+       id="path144" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 215.54377,521.60713 -0.1983,-41.84003 30.73557,0.19829 0.79317,42.6332 z"
+       name="places"
+       class="murray_hill"
+       id="path184" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 219.90623,628.2893 -18.24304,-0.99147 -0.59488,-30.33898 15.66522,-7.73347 c 2.8837,13.47784 2.17909,26.0586 3.1727,39.06392 z"
+       class="noho"
+       name="places"
+       sodipodi:nodetypes="ccccc"
+       id="path178" />
+    <path
+       class="roosevelt_island"
+       name="places"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 282.93945,488.24846 c -1.5294,8.08764 -11.41769,2.3827 -10.39983,-3.77762 3.41911,-15.9691 -1.11659,-36.22895 4.81394,-49.94136 3.97799,-10.95478 6.24391,-22.17576 6.97907,-33.19214 0.95478,-14.3073 0.001,-28.43784 3.79326,-42.9246 1.23489,-4.02077 5.83926,-12.61435 11.0469,-7.82226 6.75797,3.21206 2.82325,15.92974 2.51975,23.16422 -0.38855,14.54976 -3.52829,25.34391 -6.80449,39.41751 -2.91607,17.80303 -4.52581,34.95018 -8.23081,50.00817 -0.87844,8.9732 -0.95991,17.29955 -3.71779,25.06808 z"
+       sodipodi:nodetypes="cccscccccc"
+       id="path128" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 201.66319,627.29783 -0.79317,27.36456 -11.10447,-0.19829 -0.1983,8.52664 c -18.51605,-3.63539 -30.90145,-7.27077 -45.60761,-10.90616 l -10.50959,0.59488 -11.50105,-23.39869 h 34.70145 l 12.88911,-2.97441 z"
+       class="soho"
+       name="places"
+       sodipodi:nodetypes="cccccccccc"
+       id="path190" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 216.33694,755.19745 c -6.92403,9.42118 -21.60607,19.03924 -39.85709,-5.35394 l 19.63111,-7.13858 c 2.38547,5.94353 5.05266,8.43369 20.22598,12.49252 z"
+       class="southern_tip"
+       name="places"
+       sodipodi:nodetypes="cccc"
+       id="path194" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 270.07461,553.13587 c 10.50096,13.43198 27.49421,17.39425 27.36457,28.95093 l -51.15984,-0.19829 0.19829,-28.75264 h 23.59698"
+       class="stuyvesant"
+       name="places"
+       sodipodi:nodetypes="ccccc"
+       id="path160" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 268.6866,435.54754 c -5.55228,25.57992 -5.35398,25.77822 -5.35398,25.77822 l -16.85499,0.19829 -0.99147,-25.97651 z"
+       class="sutton"
+       name="places"
+       sodipodi:nodetypes="ccccc"
+       id="path152" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 133.14411,485.22542 0.29456,13.54966 h 35.05238 l -0.29456,-49.78028 -20.06032,0.27936 -0.19131,36.05451 z"
+       class="theater_district"
+       name="places"
+       sodipodi:nodetypes="ccccccc"
+       id="path206" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 158.03851,708.20177 -24.58846,-55.52231 10.50959,-0.59488 45.60761,10.90616 0.1983,24.78675 3.76758,21.21746 z"
+       name="places"
+       class="tribecca"
+       id="path198" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 258.37527,485.71592 c -5.38209,15.8782 -5.35335,27.11856 -3.371,36.68439 l -8.13006,0.19828 1e-5,-36.68438 z"
+       class="tudor"
+       name="places"
+       sodipodi:nodetypes="ccccc"
+       id="path156" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 215.34547,479.7671 -1.18976,-44.41786 31.33045,0.1983 0.59488,44.41785 z"
+       name="places"
+       class="turtle_bay"
+       id="path186" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 241.71857,719.70283 23.99358,-23.99358 -44.41786,-21.21745 0.39659,34.89974 z"
+       class="two_bridges"
+       name="places"
+       sodipodi:nodetypes="ccccc"
+       id="path176" />
+    <path
+       class="upper_east_side"
+       name="places"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.13386;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 212.92004,320.22536 c 0.1727,16.85313 0.29272,31.29352 0.32505,47.96348 0.94153,-0.12506 53.54717,0.3479 64.56627,0.21535 -0.93572,3.79979 -8.07564,21.8847 -9.16496,25.06051 -17.59107,-0.58462 -78.7415,-0.83408 -78.26308,-0.72462 0.89791,-18.71733 -0.59876,-39.38923 0.41016,-72.60766"
+       sodipodi:nodetypes="cccccc"
+       id="path130" />
+    <path
+       class="upper_west_side"
+       name="places"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 86.382223,393.0472 c 17.239557,-0.3138 49.616647,0.0392 59.860377,0.14628 0.30796,-28.14418 1.23831,-111.37538 0.76731,-117.94484 -20.57069,0.19539 -41.58512,-1.03626 -60.450061,-0.22706 -1.120108,40.11113 1.716812,80.63078 -0.177626,118.02562 z"
+       sodipodi:nodetypes="ccccc"
+       id="path146" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 241.71857,719.70283 -20.02769,-10.31129 -23.0021,-0.19829 -2.57782,33.51168 c 5.95926,12.77425 13.28433,10.52457 20.22598,12.49252 12.28892,-9.6439 20.49387,-21.62149 25.38163,-35.49462 z"
+       class="wall_street"
+       name="places"
+       sodipodi:nodetypes="cccccc"
+       id="path192" />
+    <path
+       class="washington_heights"
+       name="places"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.13386;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 155.27805,128.84054 c -1.7688,0.42135 -65.210148,-2.64161 -65.613285,-5.39259 0.0012,-12.39269 -7.088141,-25.862127 -9.65458,-33.435757 1.005261,1.76962 51.630595,-1.33756 56.262725,0.2053 -1.4871,13.546167 18.82487,38.824117 19.00514,38.623047"
+       sodipodi:nodetypes="ccccc"
+       id="path132" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 121.949,629.28077 h 34.70145 l 0.39659,-46.99568 -34.21245,-1.03381 1.47279,15.61156 -9.42586,12.37143 z"
+       name="places"
+       class="west_villiage"
+       id="path200" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 198.68878,709.19325 -2.57782,33.51168 -19.63111,7.13858 -18.44134,-41.64174 z"
+       name="places"
+       class="whitehall"
+       id="path196" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 212.92004,320.22536 0.32505,47.96348 64.56627,0.21535 c 0.0272,-6.84133 3.90408,-8.49265 4.57898,-10.53882 2.01757,-6.11684 0.83623,-16.389 -2.0016,-20.03605 -4.67089,-4.39421 -14.32459,-6.87906 -20.77133,-17.6673 z"
+       class="yorkville"
+       name="places"
+       sodipodi:nodetypes="cccsccc"
+       id="path218" />
+  </g>
+</svg>
