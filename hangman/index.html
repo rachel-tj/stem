@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hnagman</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="half.png">
+    <script src="script.js"></script>
+</head>
+<body>
+    <body onload = "makeClear()">
+        <div id="box">
+            <h2>hangman</h2><hr><br><br>
+            <h3>here is hangman. choose a category!!! category credits go to casey [fish] and ashwin [movie titles]. it isn't that hard so hopefully you don't need it explained to you <3.</h3>
+            <br>
+            <div id="bobo">
+                <div class="section" onclick="start(seinfeld)">seinfeld</div>
+                •
+                <div class="section" onclick="start(books)">books</div>
+                •
+                <div class="section" onclick="start(fish)">fish</div>
+                •
+                <div class="section" onclick="start(movies)">movies</div>
+            </div>
+            <div id="wrapper" style="display:none;">
+               <input id="input" type="text" placeholder="enter a letter">
+               <div id="giveup" onclick="giveUp()">give up</div>
+           </div>
+           <div id="total" style="display:none">
+               <div id="text"></div>
+           </div>
+           <div id="vacuum">
+               <object id="svgClass" type="image/svg+xml" data="kyle.svg";></object>
+               <div id="letters"></div>
+            </div>
+        </div>
+    </body>
+</body>
+</html>

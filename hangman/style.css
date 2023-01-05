@@ -1,0 +1,207 @@
+body
+{
+    background-color: rgb(228, 240, 236);
+    font-family: "cochin";
+}
+
+h2
+{
+    color: black;
+    font-weight: normal;
+    background-color: rgb(255, 255, 255, 0.7);
+    font-size: 50px;
+    height: 75px;
+    margin-top: 40px;
+    margin-inline: 25%;
+    border-radius: 8px;
+    text-align: center;;
+}
+
+h3
+{
+    color: black;
+    font-weight: normal;
+    margin-inline: 25%;
+}
+
+#box
+{
+    text-align: center;
+}
+
+
+input
+{
+    height: 40px;
+    font-size: 20px;
+    font-family: monospace;
+    width: 300px;
+    margin-block: 8px;
+    margin-inline: 40px;
+}
+
+#startButton
+{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: rgb(200, 238, 215);
+    margin-inline: 45%;
+    box-shadow: 4px 4px 2px;
+    border: thin solid black;
+    margin-top: 20px;
+    margin-bottom: 84px;
+}
+
+#startButton:hover
+{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#answers
+{
+    display: flex;
+    width: 70%;
+    margin-inline: 15%;
+    justify-content: center;
+    margin-block: 40px;
+}
+
+.continent
+{
+    font-family: 'Times New Roman', Times, serif;
+    border: thin solid black;
+    background-color: rgb(255, 255, 255, 0.7);
+    text-align: center;
+    margin: 20px;
+    height: fit-content;
+}
+
+#wrapper
+{
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#giveup
+{
+    font-family: 'Times New Roman', Times, serif;
+    margin-block: auto;
+    height: fit-content;
+    font-size: 20px;
+}
+
+#giveup:hover
+{
+    text-decoration: underline;
+}
+
+#text
+{
+    justify-content: space-evenly;
+}
+
+span
+{
+    font-family: monospace;
+    text-decoration-style: wavy;
+    margin-inline: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#vacuum
+{
+    margin-inline: 20%;
+    margin-block: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#letters
+{
+    font-family: monospace;
+    font-size: 40px;
+    border: 2px solid black;
+    border-radius: 4px;
+    text-align: left;
+    padding-inline: 15px;
+    width: 500px;
+    height: 200px;
+    margin-inline: 40px;
+}
+
+#total
+{
+    margin-inline: 10%;
+    line-height: 40px;
+}
+
+@keyframes fadeIn
+{
+    0%
+    {
+        color: rgba(0, 0, 0, 0);
+    }
+    100%
+    {
+        color: black;
+    }
+  }
+
+
+  @keyframes fadeInStroke
+{
+    0%
+    {
+        stroke: red;
+    }
+    100%
+    {
+        stroke: black
+    }
+  }
+
+  @keyframes fadeInRed
+{
+    0%
+    {
+        color: rgba(0, 0, 0, 0);
+    }
+    100%
+    {
+        color: red;
+    }
+  }
+
+  @keyframes fadeInGreen
+{
+    0%
+    {
+        color: rgba(0, 0, 0, 0);
+    }
+    100%
+    {
+        color: green;
+    }
+  }
+
+  .section:hover
+  {
+    text-decoration: underline;
+  }
+
+  .section
+  {
+    font-family: monospace;
+    font-size: 20px;
+    width: fit-content;
+    margin-inline: 15px;
+  }
+
+  #bobo
+  {
+    display: flex;
+    justify-content: center;
+  }
