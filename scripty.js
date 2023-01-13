@@ -12,10 +12,10 @@ var comp =
   back : 105,
 }
 
+
 function start()
 {
   setComments();
-  //checkReply();
 }
 
 function scrollFunction(id)
@@ -42,19 +42,21 @@ function scrollFunction(id)
 
 function grabify(id)
 {
+  var loc;
   switch (id)
   {
     case "music":
     {
-      window.location.href = "https://grabify.link/RGH4Y5";
+      loc = "https://grabify.link/RGH4Y5";
       break;
     }
-    case "nonogram":
-    {
-      window.open("https://grabify.link/IQX2UB");
-      break;
-    }
+    case "films":
+      {
+        loc = "https://grabify.link/YE5UCU";
+        break;
+      }
   }
+  window.location.href = loc;
 }
 
   function transform(id)
@@ -283,4 +285,24 @@ function backwards()
       feature[i].style.animation = 'slide 30s' + delay + 'infinite';
   }
 comp.back -= 5;
+}
+
+function social(website)
+{
+  switch (website)
+  {
+    case "github":
+      loc = "https://github.com/deadfishh";
+      break;
+    case "linkedin":
+      loc = "https://www.linkedin.com/in/rachel-tjarksen-26a275259/"
+      break;
+    case "spotify":
+      loc = "https://open.spotify.com/user/1c7w4bmcgx7zndf0s5ex0nrnd";
+      break;
+    case "facebook":
+      loc = "https://www.facebook.com/people/Rachel-Tjarksen/100089388970158/"
+      break;
+  }
+  window.open(loc);
 }
