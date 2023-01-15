@@ -171,7 +171,7 @@ textarea
   {
     border-radius: 6px;
     background-color: rgba(168, 143, 168, 0.791);
-    height: 250px;
+    height: 330px;
     position: relative;
     border: thin solid black;
     margin-inline: 7%;
@@ -185,7 +185,7 @@ textarea
   .feature
   {
     display: block;
-    height: 200px;
+    height: 280px;
     width: 280px;
     max-width: fit-content;
     background-color: rgb(255, 255, 255, 0.6);
@@ -200,7 +200,8 @@ textarea
   .ftimg
   {
     height: auto;
-    width: 100px;
+    width: 200px;
+    border-radius: 2px;
   }
 
   .cap
@@ -545,7 +546,7 @@ textarea
     font-size: 12px;
     border-bottom: 1px solid black;
     text-decoration: none;
-    background-color: white;
+    background-color: whitesmoke;
   }
 
   .dropdown-content
