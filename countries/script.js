@@ -150,7 +150,7 @@ var count = 0;
 
     function makeTimer()
     {
-        var timeleft = 9;
+        var timeleft = 899;
         timer = document.getElementById('timer');
         var downloadTimer = setInterval(function()
         {
