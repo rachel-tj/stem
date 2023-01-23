@@ -303,6 +303,9 @@ function social(website)
     case "facebook":
       loc = "https://www.facebook.com/people/Rachel-Tjarksen/100089388970158/"
       break;
+    case "twitter":
+      loc = "https://twitter.com/dailydeadfish"
+      break;
   }
   window.open(loc);
 }
