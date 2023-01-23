@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>name the elements</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="half.png">
+    <script src="script.js"></script>
+</head>
+<body>
+    <body onload = "start()">
+        <div id="box">
+           <h2>name the elements</h2><hr><br><br>
+           <h3>name as many countries as you can.  for a scalable vector graphic, this sure isn't very scalable!  hopefully i will figure out how to condense it, but that might mean downloading a whole new file and like 70% of the work on this was just editing the svg file so i think we can all just deal with the large map here.</h3>
+           <br>
+           <div id="startButton">start</div>
+           <div id="count" style="display:none;">0/64 elements</div>
+           <div id="wrapper" style="display:none;">
+                <div id="timer">15:00</div>
+               <input id="input" type="text" placeholder="enter an element">
+               <div id="giveup" onclick="giveUp()">give up</div>
+           </div>
+           <object id="svgClass" type="image/svg+xml" data="elements.svg";></object>
+        </div>
+        <div id="answers">
+            <div class="continent" id="p">
+                <div class="contLabel">
+                    p orbital
+                </div>
+            </div>
+            <div class="continent" id="f">
+                <div class="contLabel">
+                    f orbital
+                </div>
+            </div>
+            <div class="continent" id="s">
+                <div class="contLabel">
+                    s orbital
+                </div>
+            </div>
+            <div class="continent" id="d">
+                <div class="contLabel">
+                    d orbital
+                </div>
+            </div>
+        </div>
+  </body>
+</body>
+</html>

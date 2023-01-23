@@ -1,0 +1,134 @@
+body
+{
+    background-color: rgb(243, 180, 195);
+    font-family: "cochin";
+}
+
+h2
+{
+    color: black;
+    font-weight: normal;
+    background-color: rgb(255, 255, 255, 0.7);
+    font-size: 50px;
+    height: 75px;
+    margin-top: 40px;
+    margin-inline: 25%;
+    border-radius: 8px;
+    text-align: center;;
+}
+
+h3
+{
+    color: black;
+    font-weight: normal;
+    margin-inline: 25%;
+}
+
+#box {
+    text-align: center;
+}
+
+
+#timer
+{
+    width: fit-content;
+    font-family: monospace;
+    font-size: 30px;
+    border-radius: 4px;
+    border: medium solid black;
+    padding: 10px;
+    height: fit-content;
+}
+
+input
+{
+    font-size: 20px;
+    font-family: monospace;
+    width: 300px;
+    margin-block: 8px;
+    margin-inline: 40px;
+}
+
+#count
+{
+    font-size: 24px;
+    font-family: monospace;
+    margin-block: 10px;
+}
+
+#startButton
+{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: thistle;
+    margin-inline: 45%;
+    box-shadow: 4px 4px 2px;
+    border: thin solid black;
+    margin-top: 20px;
+    margin-bottom: 84px;
+}
+
+#startButton:hover
+{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#answers
+{
+    display: flex;
+    width: 70%;
+    margin-inline: 15%;
+    justify-content: center;
+    margin-block: 40px;
+}
+
+.continent
+{
+    font-family: 'Times New Roman', Times, serif;
+    border: thin solid black;
+    background-color: rgb(255, 255, 255, 0.7);
+    text-align: center;
+    margin: 20px;
+    height: fit-content;
+}
+
+li
+{
+    list-style: none;
+    padding-block: 5px;
+    padding-inline: 20px;
+    border: thin solid black;
+    color: green;
+}
+
+.contLabel
+{
+    width: 150px;
+    background-color: palevioletred;
+    color: white;
+    text-shadow: 2px 2px black;
+    padding-block: 2px;
+    font-size: 26px;
+    border: thin solid black;
+    padding-inline: 10px;
+}
+
+#wrapper
+{
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#giveup
+{
+    font-family: 'Times New Roman', Times, serif;
+    margin-block: auto;
+    height: fit-content;
+    font-size: 20px;
+}
+
+#giveup:hover
+{
+    text-decoration: underline;
+}
