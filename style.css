@@ -483,7 +483,7 @@ textarea
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-inline: 30%;
+    margin-inline: 25%;
     min-width: fit-content;
     margin-block: 3%;
     background-color: rgba(168, 143, 168, 0.791);
@@ -582,4 +582,16 @@ textarea
   {
     list-style: none;
     text-decoration: none;
+  }
+
+  .movieTitle
+  {
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: -20px;
+  }
+
+  u
+  {
+    font-family: inherit;
   }
