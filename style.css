@@ -2,11 +2,11 @@
 
 {
     box-sizing: border-box;
-    font-family: 'cochin'
-}
-
-body
-{
+  }
+  
+  body
+  {
+    font-family: 'cochin';
     background: thistle;
     font-size: large;
     padding-bottom: 100px;
@@ -19,7 +19,7 @@ body
     background-color: rgba(255, 255, 255, 0.7);
     margin-bottom: 30px;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
     margin-inline: 60px;
     padding: 20px;
     border-radius: 8px;
@@ -143,6 +143,7 @@ textarea
     font-size: 20px;
     background-color: transparent;
     border-color: transparent;
+    font-family: 'cochin';
   }
   
   #scrolling
@@ -589,6 +590,7 @@ textarea
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: -20px;
+    font-size: 20px;
   }
 
   u
