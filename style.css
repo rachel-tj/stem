@@ -153,8 +153,6 @@ textarea
     display: block;
     padding-block: 20px;
     margin-inline: 40px;
-    
-
   }
 
   #top
@@ -301,7 +299,7 @@ textarea
     background-color: floralwhite;
   }
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 500px) {
     figure
     {
       font-size: 1.8vw;
@@ -323,6 +321,38 @@ textarea
     #medias
     {
       margin-inline: 10% !important;
+    }
+    .label, .label2
+    {
+      font-size: 6vw;
+      margin-inline: 7%
+    }
+    .blog
+    {
+      font-size: 3.5vw;
+      margin-inline: 5%
+    }
+    .movieTitle
+    {
+      font-size: 4vw !important;
+      padding-bottom: 6px;
+    }
+    h1
+    {
+      margin-inline: 5%;
+    }
+    #scrolling, #scroll
+    {
+      font-size: 1rem !important;
+    }
+    #scrolling
+    {
+      margin-inline: 0%;
+    }
+    #top
+    {
+      padding-inline: 0px !important;
+      margin-inline: 0px;
     }
   }
 
