@@ -296,9 +296,34 @@ textarea
     margin: auto;
     box-shadow: 8px 8px 4px dimgray;
     width: 200px;
+    height: auto;
     border: thin solid black;
     background-color: floralwhite;
+  }
 
+  @media screen and (max-width: 720px) {
+    figure
+    {
+      font-size: 1.8vw;
+    }
+    figure figcaption
+    {
+      padding-inline: 4px !important;
+      padding-bottom: 20px !important;
+    }
+    .inner
+    {
+      margin-inline: 8px !important;
+    }
+    figure img
+    {
+      outline-offset: -10px !important;
+      padding: 10px !important;
+    }
+    #medias
+    {
+      margin-inline: 10% !important;
+    }
   }
 
   figure:hover, .overlay:hover > figure
@@ -342,7 +367,7 @@ textarea
   .gallery
   {
     display: flex;
-    margin-inline: 120px;
+    margin-inline: 10%;
     padding-top: 110px;
     margin-top: -20px;
     justify-content: space-between;
@@ -597,3 +622,4 @@ textarea
   {
     font-family: inherit;
   }
+
