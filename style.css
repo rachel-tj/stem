@@ -12,6 +12,12 @@
     padding-bottom: 100px;
     height: 100%;
 }
+#mailLink
+{
+  font-family: 'cochin';
+  font-size: large;
+  padding: 0px;
+}
 
 .blog
 {
