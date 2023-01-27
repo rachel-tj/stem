@@ -360,6 +360,23 @@ textarea
       padding-inline: 0px !important;
       margin-inline: 0px;
     }
+    table
+    {
+      margin-inline: 5% !important;
+    }
+    .des
+    {
+      font-size: 3vw !important;
+    }
+    a
+    {
+      font-size: 3.5vw;
+    }
+    td
+    {
+      min-width: 120px;
+      min-height: 200px;
+    }
   }
 
   figure:hover, .overlay:hover > figure
@@ -528,9 +545,10 @@ textarea
 
   .social
   {
-    width: 75px;
-    height: 75px;
-
+    width: 6vw;
+    height: 6vw;
+    min-width: 40px;
+    min-height: 40px;
   }
 
   .social:hover
@@ -568,7 +586,7 @@ textarea
   td
   {
     border: thin solid rgb(255, 255, 255, 0);
-    width: 300px;
+    width: 20vw;
     height: 120px;
     vertical-align: text-top;
   }
