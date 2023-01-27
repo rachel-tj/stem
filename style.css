@@ -335,7 +335,7 @@ textarea
     }
     .blog
     {
-      font-size: 3.5vw;
+      font-size: 4vw;
       margin-inline: 5%
     }
     .movieTitle
@@ -372,6 +372,10 @@ textarea
     {
       min-width: 120px;
       min-height: 200px;
+    }
+    footer
+    {
+      font-size: 10px !important;
     }
   }
 
@@ -613,6 +617,7 @@ textarea
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     margin-bottom: -80px;
+
   }
 
   .drop
