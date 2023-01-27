@@ -301,7 +301,7 @@ textarea
     background-color: floralwhite;
   }
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 420px) {
     figure
     {
       font-size: 1.8vw;
