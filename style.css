@@ -295,35 +295,18 @@ textarea
 
   figure
   {
-    position: relative;
+    display: block;
     transform: rotate(7deg);
     margin: auto;
     box-shadow: 8px 8px 4px dimgray;
     width: 200px;
-    height: auto;
+    min-width: 200px;
+    height: 280px;
     border: thin solid black;
     background-color: floralwhite;
   }
 
   @media screen and (max-width: 500px) {
-    figure
-    {
-      font-size: 1.8vw;
-    }
-    figure figcaption
-    {
-      padding-inline: 4px !important;
-      padding-bottom: 20px !important;
-    }
-    .inner
-    {
-      margin-inline: 8px !important;
-    }
-    figure img
-    {
-      outline-offset: -10px !important;
-      padding: 10px !important;
-    }
     #medias
     {
       margin-inline: 10% !important;
@@ -419,6 +402,7 @@ textarea
 
   .gallery
   {
+    flex-wrap: wrap;
     display: flex;
     margin-inline: 10%;
     padding-top: 110px;
