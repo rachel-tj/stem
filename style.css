@@ -328,6 +328,7 @@ textarea
     #scrolling, #scroll
     {
       font-size: 1rem !important;
+      color: black !important;
     }
     #scrolling
     {
