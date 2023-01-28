@@ -44,7 +44,6 @@ h1
 {
     font-weight: normal;
     border: solid thin black;
-    color: black;
     background-color: rgb(255, 255, 255, 0.7);
     font-size: 50px;
     padding-block: 10px;
@@ -141,31 +140,27 @@ textarea
 
   #scroll
   {
-    box-shadow: none;
-    width: 8%;
-    min-width: fit-content;
-    align-items: center;
-    display: inline;
-    font-size: 20px;
+    font-size: 16px;
     background-color: transparent;
     border-color: transparent;
-    font-family: 'cochin';
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-inline: 2.5vw;
   }
   
   #scrolling
   {
+    justify-content: space-evenly;
     text-align: center;
     border-bottom: thin solid black;
-    display: block;
     padding-block: 20px;
     margin-inline: 40px;
   }
-
+  
   #top
   {
+    background-color: thistle;
     z-index: 3;
     overflow: visible;
-    background-color: thistle;
     position: sticky;
     top: 0;
     width: 100%;
