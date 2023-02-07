@@ -1,0 +1,61 @@
+body
+{
+    background-color: rgb(188, 178, 202);
+    font-family: "cochin";
+}
+
+h2
+{
+    color: black;
+    font-weight: normal;
+    background-color: rgb(255, 255, 255, 0.7);
+    font-size: 50px;
+    height: 75px;
+    margin-top: 40px;
+    margin-inline: 25%;
+    border-radius: 8px;
+    text-align: center;;
+}
+
+h3
+{
+    color: black;
+    font-weight: normal;
+    margin-inline: 25%;
+}
+
+#box
+{
+    text-align: center;
+}
+
+#cross
+{
+    display: flex;
+    text-align: center;
+    margin-inline: 15%;
+}
+
+#firstBox, #secondBox
+{
+    float: left;
+    width: 50%;
+    justify-content: space-evenly;;
+}
+
+input
+{
+    padding: 2px;
+    width: 200px;
+    height: 30px;
+    font-family: monospace;
+    font-size: 16px;
+    border-radius: 4px;
+    border: thin solid grey;
+}
+
+select
+{
+    padding: 4px;
+    border-radius: 4px;
+}
