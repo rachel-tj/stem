@@ -34,13 +34,6 @@ function addRow(writing, keyNum)
     td2 = document.createElement("td")
     tdcheck = document.createElement("td")
     trash = document.createElement("td")
-    if (writing)
-    {
-        arr = writing.split("xxx")
-        td1.textContent = arr[0]
-        td2.textContent = arr[1]
-        extraRow.id = section.replace(" ", "") + "r" + keyNum
-    }
     tdSetUp(td1, td2, tdcheck, trash)
     tdEvents(td1, td2, tdcheck, trash, writing)
     extraRow.appendChild(td1)
@@ -48,6 +41,15 @@ function addRow(writing, keyNum)
     extraRow.appendChild(tdcheck)
     extraRow.appendChild(trash)
     table[0].appendChild(extraRow)
+    if (writing)
+    {
+        arr = writing.split("xxx")
+        td1.textContent = arr[0]
+        td2.textContent = arr[1]
+        extraRow.id = section.replace(" ", "") + "r" + keyNum
+        console.log(arr[2])
+        changeRowColor(tdcheck, arr[2])
+    }
 }
 
 function updateLocalStorage(parent, input, place)
@@ -59,7 +61,7 @@ function updateLocalStorage(parent, input, place)
         arr = lcString.split("xxx")
     }
     arr[place - 1] = input
-    newString = arr[0] + "xxx" + arr[1]
+    newString = arr[0] + "xxx" + arr[1] + "xxx" + arr[2]
     localStorage.setItem(parent.id, newString)
 }
 
@@ -94,17 +96,12 @@ function tdEvents(td1, td2, tdcheck, trash, writing)
     td2.addEventListener('keyup', function()
     {
         input = this.textContent
-
-            updateLocalStorage(this.parentElement, input, 2)
+        updateLocalStorage(this.parentElement, input, 2)
     })
     tdcheck.addEventListener('mousedown', function()
     {
-        parr = this.parentElement;
-        changedColor = parr.style.backgroundColor == "thistle" ? "transparent" : "thistle";
-        this.textContent = parr.style.backgroundColor == "thistle" ? "" : "✓"
-        trash.style.backgroundColor = "rgb(250, 250, 250)"
-        parr.style.backgroundColor = changedColor;
-
+        boolval = changeRowColor(this, false)
+        updateLocalStorage(this.parentElement, boolval, 3)
     });
     trash.addEventListener('mouseup', function()
     {
@@ -126,3 +123,23 @@ function tdSetUp(td1, td2, tdcheck, trash)
     td2.spellcheck =  false;
 }
 
+
+function changeRowColor(selfie, bool)
+{
+    parr = selfie.parentElement;
+    changedColor = parr.style.backgroundColor == "thistle" ? "transparent" : "thistle";
+    changedText = parr.style.backgroundColor == "thistle" ? "" : "✓"
+    if (bool)
+    {
+        changedColor = bool == "true" ? "thistle" : "transparent"
+        changedText = bool == "true" ? "✓" : ""
+    }
+    trash.style.backgroundColor = "rgb(250, 250, 250)"
+    parr.style.backgroundColor = changedColor;
+    selfie.textContent = changedText
+    return parr.style.backgroundColor == "thistle" ? "true" : "false"
+}
+
+
+// answer for #2
+// constructive dillema
