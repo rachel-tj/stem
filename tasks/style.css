@@ -105,8 +105,9 @@ h2
 
   .trash
   {
-    color: transparent;
+    color: transparent ;
     padding-left: 14px;
+    text-decoration: initial;
     border: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
@@ -114,4 +115,9 @@ h2
   .trash:hover
   {
     color: grey;
+  }
+
+  tr
+  {
+    text-decoration: 1px solid grey;
   }

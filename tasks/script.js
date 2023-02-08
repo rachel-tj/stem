@@ -137,6 +137,19 @@ function changeRowColor(selfie, bool)
     trash.style.backgroundColor = "rgb(250, 250, 250)"
     parr.style.backgroundColor = changedColor;
     selfie.textContent = changedText
+    if (parr.style.backgroundColor == "thistle")
+    {
+        parr.style.color = "grey";
+        parr.style.textDecoration = "1px line-through"
+    }
+    else
+    {
+        parr.style.color = "black";
+        parr.style.textDecoration = "none"
+    }
+    selfie.style.textDecorationColor = "transparent"
+    trash.style.textDecorationColor = "red"
+    console.log(selfie.style.textDecorationColor)
     return parr.style.backgroundColor == "thistle" ? "true" : "false"
 }
 
