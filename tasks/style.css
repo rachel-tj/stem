@@ -7,6 +7,10 @@ body
 
 h1
 {
+    background-color: lightsteelblue;
+    margin-top: -20px;
+    padding-top: 60px;
+    width: 102%;
     font-weight: normal;
     font-size: 50px;
     font-family: monospace;
@@ -16,6 +20,11 @@ h1
 
 h2
 {
+    background-color: lightsteelblue;
+    width: 102%;
+    margin-top: -30px;
+    margin-bottom: -10px;
+    padding-block: 40px;
     font-size: 20px;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -60,14 +69,13 @@ h2
     width: 50%;
   }
 
-  #titlerow
+  #titlerow > td
   {
     font-size: 24px;
   }
 
   td
   {
-    
     border: thin solid black;
     padding-block: 6px;
     min-width: 40px;
