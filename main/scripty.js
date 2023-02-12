@@ -37,7 +37,7 @@ function scrollFunction(id)
   function newTab(place)
   {
     window.open(
-    "https://deadfishh.github.io./stem/" + place);
+    "https://rachel-tj.github.io./stem/" + place);
 }
 
 function grabify(id)
@@ -292,7 +292,7 @@ function social(website)
   switch (website)
   {
     case "github":
-      loc = "https://github.com/deadfishh";
+      loc = "https://github.com/rachel-tj";
       break;
     case "linkedin":
       loc = "https://www.linkedin.com/in/rachel-tjarksen-26a275259/"
