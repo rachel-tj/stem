@@ -12,7 +12,7 @@ h2
     font-size: 50px;
     height: 75px;
     margin-top: 40px;
-    margin-inline: 350px;
+    margin-inline: 20%;
     border-radius: 8px;
     text-align: center;;
 }
@@ -21,7 +21,7 @@ h3
 {
     color: black;
     font-weight: normal;
-    margin-inline: 350px;
+    margin-inline: 20%;
 }
 
 #box {
@@ -46,12 +46,15 @@ h3
 
 #timer
 {
+    margin-inline: auto;
     width: fit-content;
+    margin-block: 30px;
     font-family: monospace;
-    font-size: 36px;
+    font-size: 30px;
     border-radius: 4px;
     border: medium solid black;
-    padding: 10px;
+    padding-block: 10px;
+    height: fit-content;
 }
 
 input
@@ -85,4 +88,24 @@ input
 #startButton:hover
 {
     background-color: rgba(255, 255, 255, 0.4);
+}
+
+#wrapper
+{
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-inline: auto;
+}
+
+#giveup
+{
+    font-family: 'Times New Roman', Times, serif;
+    margin-block: auto;
+    height: fit-content;
+    font-size: 20px;
+}
+
+#giveup:hover
+{
+    text-decoration: underline;
 }

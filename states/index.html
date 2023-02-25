@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>name the states</title>
     <link href="style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="half.png">
+    <link rel="icon" type="image/png" href="ohio.png">
     <script src="script.js"></script>
 </head>
 <body>
     <body onload = "start()">
         <div id="box">
-           <h2>name the states</h2><hr><br><br>
-           <h3>this is a 'name the states' quiz that is the alpha (bad) version before i make the name the countries quiz, which is what we're really here for.  the credit goes to @thereal_adubs for his idea to have two different maps, one with colors and one that's all white, and use the colors one to differentiate between states.  you can't see the colors one, i hid it on purpose!</h3>
+            <h2>name the states</h2><hr><br><br>
+            <h3>this is a name the states quiz, made as a way to figure out svg files before i made the name the countries quiz.  enter as many states as you can, and as you enter them, the map will get filled up in light blue.  </h3>
            <br>
-           <div id="startButton">start</div>
-           <div id="count" style="display:none;">50 states left</div>
+           <div id="wrapper">
+               <div id="startButton">start</div>
+               <div id="count" style="display:none;">50 states left</div>
+               <div id="timer">5:00</div>
+               <div id="giveup" onclick="giveUp()">give up</div>
+           </div>
            <object id="svgClass" type="image/svg+xml" data="white.svg"></object>
 
         </div>
-        <input style="display:none;" id="input" type="text" placeholder="enter a country">
+        <input style="display:none;" id="input" type="text" placeholder="enter a state">
   </body>
 </body>
 </html>

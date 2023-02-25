@@ -18,6 +18,7 @@ var count = 50;
         start.style.display = 'none';
         document.getElementById('count').style.display = 'block';
         document.getElementById('input').style.display = 'block';
+        makeTimer()
     });
 }
 
@@ -43,3 +44,73 @@ var count = 50;
             }
         });
   }
+
+  function makeTimer()
+    {
+        var timeleft = 299;
+        timer = document.getElementById('timer');
+        var downloadTimer = setInterval(function()
+        {
+            if(timeleft <= 0)
+            {
+              clearInterval(downloadTimer);
+              giveUp();
+              timer.innerHTML = '0:00';
+              timer.style.color = 'crimson';
+              document.getElementById('input').value = "";
+            }
+            else if ((timeleft % 60) < 10)
+            {
+              timer.innerHTML = Math.floor(timeleft / 60) + ':0' + (timeleft % 60);
+            }
+            else
+            {
+                timer.innerHTML = Math.floor(timeleft / 60) + ':' + (timeleft % 60);
+            }
+            timeleft--;
+        }, 1000);
+    }
+
+    function giveUp()
+    {
+      var input = document.getElementById('input');
+      input.placeholder = "you loose the game"
+      input.readOnly = true;
+
+      var timer = document.getElementById('timer');
+      timer.textContent = "0:00";
+
+      finish();
+
+    }
+
+    function finish()
+    {
+      var svg = document.getElementById("svgClass").contentDocument;
+      var contArray = svg.getElementsByName(continent);
+      var last = '';
+      var amount = 1;
+      for (var i = 0; i < contArray.length; i++)
+      {
+        if (contArray[i].style.fill !== 'mediumaquamarine')
+        {
+          contArray[i].style.fill = 'indianred';
+        }
+        var temp = contArray[i].getAttribute('class');
+        console.log(temp)
+        console.log(last)
+        if (temp !== last)
+        {
+          console.log('.')
+          var listItem = document.getElementById(continent + amount)
+          if (!listItem.textContent)
+          {
+            listItem.style.color = 'crimson'
+            listItem.textContent = contArray[i].getAttribute('class').replaceAll('_', ' ');
+          }
+          amount++;
+        }
+        last = temp;
+      }
+
+    }
