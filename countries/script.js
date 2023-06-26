@@ -12,6 +12,7 @@ var count = 0;
         this.style.boxShadow = 'none';
     });
 
+    
     makeList('north_america')
     makeList('south_america')
     makeList('europe')
@@ -19,13 +20,12 @@ var count = 0;
     makeList('asia')
     makeList('oceania')
     
-
-     start.addEventListener('mouseup', function()
-     {
-       start.style.display = 'none';
-       document.getElementById('count').style.display = 'block';
-       document.getElementById('wrapper').style.display = 'flex';
-       makeTimer();
+    start.addEventListener('mouseup', function()
+    {
+      start.style.display = 'none';
+      document.getElementById('count').style.display = 'block';
+      document.getElementById('wrapper').style.display = 'flex';
+      makeTimer();
     });
 }
 

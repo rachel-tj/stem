@@ -1,0 +1,184 @@
+body
+{
+    background-color: white;
+}
+
+footer
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+    font-size: 12px;
+    width: 589px;
+    margin-inline: auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    line-height: 18px;
+
+}
+
+a
+{
+    color: #022B51
+}
+
+a::after
+{
+    color: #666666
+}
+
+#box
+{
+    background-color: #022B51;
+    width: 479px;
+    margin-inline: auto;
+    margin-top: 53px;
+    padding-left: 80px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+#wrapper
+{
+    margin-right: 15px;
+}
+
+#wrapper2
+{
+    display: inline-flex;
+    margin-left: 7px;
+}
+
+h2
+{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: normal;
+}
+
+.title, .example, .forget, .forgotlink
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: lighter;
+}
+
+.example
+{
+    margin-left: -18px;
+    font-size: 11px;
+    padding-top: 6px;
+}
+
+.title
+{
+    padding-block: 2px;
+    margin-right: 30px;
+}
+
+.toppart
+{
+    display: inline-flex
+}
+
+input
+{
+    background-color: white;
+    margin-block: 2px;
+    width: 170px;
+    border-radius: 2px;
+    border-color: #767676;
+    border-style: solid;
+    border-width: 1px;
+    height: 16px;
+}
+
+.forgotlink
+{
+    font-size: 13px;
+}
+
+.field
+{
+    margin-bottom: 16px;
+}
+
+button
+{
+    
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-inline: 20px;
+    background-color: #B4B4B4;
+    border: none;
+    border-radius: 8px;
+    color:#666666;
+    align-self: center;
+    margin-block: 40px;
+    margin-inline: 31%;
+    cursor: pointer;
+}
+
+#quicklinks, .acorn
+{
+    
+    color: #E3E3E3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.acorn
+{
+    line-height: 25px !important;
+}
+
+#quicklinks
+{
+    margin-left: 60px;
+    align-items: center;
+    font-size: 17px !important;
+}
+
+#cwru
+{
+    height: 51px;
+    padding-right: 20px;
+}
+
+#murray
+{
+    display: inline-flex;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    align-items: center;
+}
+
+#corner
+{
+    position: absolute;
+    margin-left: 950px;
+    margin-left: 66%;
+    margin-top: -80px;
+    transform: rotate(-45deg);
+    height: 200px;
+    width: 100px;
+    background-color: white;
+}
+
+#login
+{
+    height: 36px;
+}
+
+#eye
+{
+    height: 16px;
+    align-self: center;
+}
+
+#eyewrapper
+{
+    display: flex;
+}
